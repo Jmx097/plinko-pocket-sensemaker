@@ -1,0 +1,288 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Plinko Pocket Sensemaker single-transcript graph",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "transcript",
+    "sources",
+    "nodes",
+    "edges",
+    "evidence",
+    "tour",
+    "assumptions",
+    "contradictions"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": "1.0"
+    },
+    "illustrative": {
+      "type": "boolean"
+    },
+    "transcript": {
+      "type": "object",
+      "required": [
+        "id",
+        "title",
+        "sourceHash",
+        "hashScope"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string"
+        },
+        "sourceHash": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "hashScope": {
+          "type": "string"
+        }
+      }
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "title",
+          "kind"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "kind": {
+            "enum": [
+              "transcript",
+              "worldmap"
+            ]
+          }
+        }
+      }
+    },
+    "nodes": {
+      "type": "array",
+      "maxItems": 60,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "label",
+          "status",
+          "evidenceIds"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "label": {
+            "type": "string",
+            "maxLength": 180
+          },
+          "status": {
+            "enum": [
+              "explicit",
+              "interpretation",
+              "proposal"
+            ]
+          },
+          "originalStatus": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "evidenceIds": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "cluster": {
+            "type": "string"
+          },
+          "lens": {
+            "enum": [
+              "Identity",
+              "Experience",
+              "Architecture",
+              null
+            ]
+          },
+          "overlay": {
+            "type": "boolean"
+          }
+        }
+      }
+    },
+    "edges": {
+      "type": "array",
+      "maxItems": 100,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "label",
+          "status",
+          "evidenceIds",
+          "from",
+          "to"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "label": {
+            "type": "string",
+            "maxLength": 180
+          },
+          "status": {
+            "enum": [
+              "explicit",
+              "interpretation",
+              "proposal"
+            ]
+          },
+          "originalStatus": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "evidenceIds": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "cluster": {
+            "type": "string"
+          },
+          "lens": {
+            "enum": [
+              "Identity",
+              "Experience",
+              "Architecture",
+              null
+            ]
+          },
+          "overlay": {
+            "type": "boolean"
+          },
+          "from": {
+            "type": "string"
+          },
+          "to": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "evidence": {
+      "type": "array",
+      "maxItems": 160,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "sourceId",
+          "timestamp",
+          "segmentId",
+          "speaker",
+          "quote"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "sourceId": {
+            "type": "string"
+          },
+          "timestamp": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "segmentId": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "speaker": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "line": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "quote": {
+            "type": "string",
+            "maxLength": 600
+          }
+        }
+      }
+    },
+    "tour": {
+      "type": "array",
+      "minItems": 5,
+      "maxItems": 5,
+      "items": {
+        "type": "object",
+        "required": [
+          "claim",
+          "edgeIds",
+          "evidenceIds",
+          "question"
+        ],
+        "properties": {
+          "claim": {
+            "type": "string"
+          },
+          "edgeIds": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "evidenceIds": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "question": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "assumptions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "contradictions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

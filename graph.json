@@ -1,0 +1,2569 @@
+{
+  "schemaVersion": "1.0",
+  "illustrative": false,
+  "transcript": {
+    "id": "workshop-2026-10-03",
+    "title": "Plinko: two tracks, one customer-experience logic",
+    "sourceHash": "1306d0fc3497ee088983a6117ff6fdf647d7bb9b983671a0bd9c46e372ec93c0",
+    "hashScope": "Library-rendered transcript text, not original upload bytes"
+  },
+  "sources": [
+    {
+      "id": "transcript",
+      "title": "Review of B2B Tax Discovery Calls and Coaching Offer Strategy",
+      "kind": "transcript"
+    },
+    {
+      "id": "worldmap-source",
+      "title": "Current public worldmap · proposals and estimates",
+      "kind": "worldmap",
+      "url": "https://worldmap.plinkosolutions.com/growth-map.js",
+      "retrievedAt": "2026-10-08T18:30:00Z"
+    }
+  ],
+  "statusLegend": {
+    "stated": "Reported current state in the discussion, not independently verified.",
+    "speaker_claim": "A strategic interpretation asserted in the discussion, not established causality.",
+    "proposal": "Recommended or intended future action.",
+    "prototype": "Explicit sketch/example, not finalized positioning.",
+    "hypothetical": "Illustrative possible customer situation.",
+    "inference": "Analyst connection across passages; not directly asserted."
+  },
+  "assumptions": [
+    "AI-generated transcript with encoding artifacts and occasional out-of-order timestamps.",
+    "Speaker names are not assigned to utterances. Attribution remains unspecified.",
+    "Plinko is named at 00:36:32 and 00:37:16; the transcript does not define full organizational/product boundaries.",
+    "No SKU catalogue, tool governance, privacy/approval protocol, measured 30% savings, or finalized offer ladder is supplied."
+  ],
+  "contradictions": [],
+  "nodes": [
+    {
+      "id": "plinko",
+      "label": "Plinko",
+      "description": "Name used in the transcript for the developing proposition; its full scope is not defined here.",
+      "status": "proposal",
+      "evidenceIds": [],
+      "cluster": "Belief and identity",
+      "lens": null
+    },
+    {
+      "id": "b2b",
+      "label": "B2B tax-firm track",
+      "description": "Additional lead sourcing for qualified tax firms handling liens, with list-only or managed-meeting delivery.",
+      "status": "explicit",
+      "evidenceIds": [
+        "ev-e1",
+        "ev-e2",
+        "ev-e3"
+      ],
+      "cluster": "B2B tax-firm track",
+      "lens": null
+    },
+    {
+      "id": "b2c",
+      "label": "B2C coaching / consulting track",
+      "description": "Education and coaching being simplified around an AI-workforce outcome; monetization remains under development.",
+      "status": "explicit",
+      "evidenceIds": [
+        "ev-e24",
+        "ev-e25",
+        "ev-e35"
+      ],
+      "cluster": "AI workforce learning",
+      "lens": null
+    },
+    {
+      "id": "acquisition",
+      "label": "Acquisition channels",
+      "description": "Email campaign, dialing, network/referrals, plus coaching events and content.",
+      "status": "explicit",
+      "evidenceIds": [
+        "ev-e1",
+        "ev-e2"
+      ],
+      "cluster": "B2B tax-firm track",
+      "lens": null
+    },
+    {
+      "id": "qualification",
+      "label": "Market qualification",
+      "description": "Segmentation based on firms' existing lien activity and suitability.",
+      "status": "explicit",
+      "evidenceIds": [
+        "ev-e3"
+      ],
+      "cluster": "B2B tax-firm track",
+      "lens": null
+    },
+    {
+      "id": "intake",
+      "label": "Intake reality",
+      "description": "Current lead sources, sales bandwidth, and delivery preferences.",
+      "status": "explicit",
+      "evidenceIds": [
+        "ev-e4",
+        "ev-e5",
+        "ev-e6"
+      ],
+      "cluster": "B2B tax-firm track",
+      "lens": null
+    },
+    {
+      "id": "mechanics",
+      "label": "Mechanical fit",
+      "description": "Whether the service can fill an operational gap.",
+      "status": "explicit",
+      "evidenceIds": [
+        "ev-e6",
+        "ev-e7",
+        "ev-e16"
+      ],
+      "cluster": "B2B tax-firm track",
+      "lens": null
+    },
+    {
+      "id": "managed",
+      "label": "List vs. booked meetings",
+      "description": "Customer does its own outreach from a list or supplier provides meeting booking.",
+      "status": "explicit",
+      "evidenceIds": [
+        "ev-e5"
+      ],
+      "cluster": "B2B tax-firm track",
+      "lens": null
+    },
+    {
+      "id": "experience",
+      "label": "Customer experience",
+      "description": "How managing the function feels, including frustration, comfort and burnout.",
+      "status": "explicit",
+      "evidenceIds": [
+        "ev-e9",
+        "ev-e10",
+        "ev-e11"
+      ],
+      "cluster": "Customer decision",
+      "lens": "Experience"
+    },
+    {
+      "id": "growth",
+      "label": "Growth aspirations",
+      "description": "Where the organization or person wants to go, beyond simply adding volume.",
+      "status": "explicit",
+      "evidenceIds": [
+        "ev-e11",
+        "ev-e12",
+        "ev-e15"
+      ],
+      "cluster": "Customer decision",
+      "lens": null
+    },
+    {
+      "id": "risk",
+      "label": "Risk-management culture",
+      "description": "Tolerance for change, uncertainty and protecting the current operation.",
+      "status": "explicit",
+      "evidenceIds": [
+        "ev-e12",
+        "ev-e14",
+        "ev-e18"
+      ],
+      "cluster": "Customer decision",
+      "lens": null
+    },
+    {
+      "id": "trust",
+      "label": "Good-faith trust",
+      "description": "Confidence that the partner understands the situation and is there for the customer's success.",
+      "status": "explicit",
+      "evidenceIds": [
+        "ev-e8",
+        "ev-e9",
+        "ev-e17"
+      ],
+      "cluster": "Customer decision",
+      "lens": "Experience"
+    },
+    {
+      "id": "gate",
+      "label": "Holistic decision gate",
+      "description": "Choice shaped by goals, risk, capabilities and relationship, above mechanics alone.",
+      "status": "explicit",
+      "evidenceIds": [
+        "ev-e7",
+        "ev-e13",
+        "ev-e14"
+      ],
+      "cluster": "Customer decision",
+      "lens": null
+    },
+    {
+      "id": "pricing",
+      "label": "Pricing / objections",
+      "description": "Point where engagement reportedly drops and a guard goes up.",
+      "status": "proposal",
+      "evidenceIds": [
+        "ev-e8",
+        "ev-e20"
+      ],
+      "cluster": "B2B tax-firm track",
+      "lens": null
+    },
+    {
+      "id": "test",
+      "label": "Client-quality test",
+      "description": "Customer must evaluate whether promised new clients are actually good for its business.",
+      "status": "explicit",
+      "evidenceIds": [
+        "ev-e18",
+        "ev-e19"
+      ],
+      "cluster": "B2B tax-firm track",
+      "lens": null
+    },
+    {
+      "id": "belief",
+      "label": "Brand belief / point of view",
+      "description": "What the brand stands for and how an apparently impossible outcome becomes possible.",
+      "status": "proposal",
+      "evidenceIds": [
+        "ev-e21",
+        "ev-e24",
+        "ev-e46"
+      ],
+      "cluster": "Belief and identity",
+      "lens": "Identity"
+    },
+    {
+      "id": "safe_growth",
+      "label": "Growth without breaking operations",
+      "description": "Prototype B2B positioning: enable growth while respecting current operating commitments.",
+      "status": "proposal",
+      "evidenceIds": [
+        "ev-e21",
+        "ev-e22",
+        "ev-e23"
+      ],
+      "cluster": "Belief and identity",
+      "lens": null
+    },
+    {
+      "id": "workforce",
+      "label": "Build your own AI workforce",
+      "description": "Simpler positioning around agents performing workforce functions rather than broad AI education.",
+      "status": "explicit",
+      "evidenceIds": [
+        "ev-e25",
+        "ev-e26",
+        "ev-e27"
+      ],
+      "cluster": "AI workforce learning",
+      "lens": null
+    },
+    {
+      "id": "offload",
+      "label": "Offload up to 30% of the day job",
+      "description": "A proposed compelling promise, not a measured result demonstrated by this transcript.",
+      "status": "proposal",
+      "evidenceIds": [
+        "ev-e26",
+        "ev-e32"
+      ],
+      "cluster": "AI workforce learning",
+      "lens": null
+    },
+    {
+      "id": "assets",
+      "label": "Existing content assets",
+      "description": "Core resources, scaffold dictionary, diagnostic, playbooks and agent-running material.",
+      "status": "explicit",
+      "evidenceIds": [
+        "ev-e27",
+        "ev-e28",
+        "ev-e29"
+      ],
+      "cluster": "AI workforce learning",
+      "lens": "Architecture"
+    },
+    {
+      "id": "inventory",
+      "label": "Content-to-problem map",
+      "description": "Chart connecting each asset and its sections to technology, usage, problem and level of need.",
+      "status": "proposal",
+      "evidenceIds": [
+        "ev-e29",
+        "ev-e30",
+        "ev-e31"
+      ],
+      "cluster": "AI workforce learning",
+      "lens": "Architecture"
+    },
+    {
+      "id": "journey",
+      "label": "Obvious / digestible journey",
+      "description": "A legible path through the content toward a meaningful before-and-after.",
+      "status": "explicit",
+      "evidenceIds": [
+        "ev-e28",
+        "ev-e33",
+        "ev-e34"
+      ],
+      "cluster": "AI workforce learning",
+      "lens": "Experience"
+    },
+    {
+      "id": "before_after",
+      "label": "Workflow before-and-after",
+      "description": "Concrete domains, support and workflows showing how the user's portfolio changes.",
+      "status": "proposal",
+      "evidenceIds": [
+        "ev-e31",
+        "ev-e32",
+        "ev-e33"
+      ],
+      "cluster": "AI workforce learning",
+      "lens": null
+    },
+    {
+      "id": "buyin",
+      "label": "Investment buy-in",
+      "description": "Move from merely learning something to investing in a consequential outcome.",
+      "status": "explicit",
+      "evidenceIds": [
+        "ev-e34",
+        "ev-e35",
+        "ev-e44"
+      ],
+      "cluster": "AI workforce learning",
+      "lens": "Experience"
+    },
+    {
+      "id": "worldmap",
+      "label": "Interactive world map",
+      "description": "Multi-page repository with a clean system map, pathways and content.",
+      "status": "explicit",
+      "evidenceIds": [
+        "ev-e37",
+        "ev-e39",
+        "ev-e40"
+      ],
+      "cluster": "Consulting artifacts",
+      "lens": null
+    },
+    {
+      "id": "consulting",
+      "label": "Artifact-supported consulting experience",
+      "description": "Use the world map and questions to structure client work and subsequent insights.",
+      "status": "proposal",
+      "evidenceIds": [
+        "ev-e37",
+        "ev-e38",
+        "ev-e41"
+      ],
+      "cluster": "Consulting artifacts",
+      "lens": null
+    },
+    {
+      "id": "playbook",
+      "label": "Holistic sales playbook",
+      "description": "Unblocking shared sales/marketing work at the framework level for reuse and possible sale.",
+      "status": "explicit",
+      "evidenceIds": [
+        "ev-e41",
+        "ev-e42",
+        "ev-e43"
+      ],
+      "cluster": "Consulting artifacts",
+      "lens": "Architecture"
+    },
+    {
+      "id": "identity",
+      "label": "Identity investment / archetype",
+      "description": "Seeing a desirable possible self embodied by an archetype and brand representative.",
+      "status": "explicit",
+      "evidenceIds": [
+        "ev-e44",
+        "ev-e45",
+        "ev-e46"
+      ],
+      "cluster": "Belief and identity",
+      "lens": "Identity"
+    },
+    {
+      "id": "flywheel",
+      "label": "Culture–ecosystem flywheel",
+      "description": "Mutually reinforcing culture and ecosystem around a brand belief and identity investment.",
+      "status": "explicit",
+      "evidenceIds": [
+        "ev-e47",
+        "ev-e48",
+        "ev-e49"
+      ],
+      "cluster": "Belief and identity",
+      "lens": "Identity"
+    },
+    {
+      "id": "sku-1",
+      "label": "Attended Consultations",
+      "status": "proposal",
+      "cluster": "Current worldmap overlay",
+      "overlay": true,
+      "evidenceIds": [
+        "ev-sku-1"
+      ],
+      "description": "id: 1\nname: Attended Consultations\nstatus: Testing\nquadrant: Market Penetration\nserved: Firm Owner\noperators: Engine + Caller + Jon\noutcome: Charge only for a consultation that meets the agreed qualification and attendance rules.\nincludes: Filing research; Eligible U.S. enrolled-agent / CPA firm criteria; Approved human outreach; Qualification against agreed criteria; Consultation booking; Case-context summary; Attendance record; Billing evidence\npriceHypothesis: $350–$450 per attended consultation, with a monthly minimum (est.).\ncapacityEstimate: 6 setup hours and 4 hours per month per firm (est.). Planning cap: 2 firms.\ndelivery: The Engine researches and matches records. A human Caller conducts approved outreach. Jon reviews quality, attendance evidence, exceptions and billing.\nvalidationGate: Confirm the buyer is an eligible enrolled-agent or CPA firm before outreach; define qualified consultation, attendance, cancellation window, duplicate handling, replacement policy, billing evidence and dispute rules before each pilot.\nevidenceLabels: Active Test; Internal Proof",
+      "sku": {
+        "id": 1,
+        "name": "Attended Consultations",
+        "status": "Testing",
+        "quadrant": "Market Penetration",
+        "served": "Firm Owner",
+        "operators": "Engine + Caller + Jon",
+        "outcome": "Charge only for a consultation that meets the agreed qualification and attendance rules.",
+        "includes": [
+          "Filing research",
+          "Eligible U.S. enrolled-agent / CPA firm criteria",
+          "Approved human outreach",
+          "Qualification against agreed criteria",
+          "Consultation booking",
+          "Case-context summary",
+          "Attendance record",
+          "Billing evidence"
+        ],
+        "priceHypothesis": "$350–$450 per attended consultation, with a monthly minimum (est.).",
+        "capacityEstimate": "6 setup hours and 4 hours per month per firm (est.). Planning cap: 2 firms.",
+        "delivery": "The Engine researches and matches records. A human Caller conducts approved outreach. Jon reviews quality, attendance evidence, exceptions and billing.",
+        "validationGate": "Confirm the buyer is an eligible enrolled-agent or CPA firm before outreach; define qualified consultation, attendance, cancellation window, duplicate handling, replacement policy, billing evidence and dispute rules before each pilot.",
+        "evidenceLabels": [
+          "Active Test",
+          "Internal Proof"
+        ]
+      }
+    },
+    {
+      "id": "sku-2",
+      "label": "Researched Leads",
+      "status": "proposal",
+      "cluster": "Current worldmap overlay",
+      "overlay": true,
+      "evidenceIds": [
+        "ev-sku-2"
+      ],
+      "description": "id: 2\nname: Researched Leads\nstatus: Testing\nquadrant: Market Penetration\nserved: Firm Owner\noperators: Engine + Jon\noutcome: Deliver researched records that match the firm’s criteria for outreach by the firm’s own team.\nincludes: Filing research; Criteria matching; Pipeline deduplication; Review queue; Agreed data fields\npriceHypothesis: Per-record price defined in each proposal.\ncapacityEstimate: 3 setup hours and 3 hours per month per firm (est.). Planning cap: 4 firms.\ndelivery: The Engine researches, matches and deduplicates records. Jon clears exceptions from the review queue.\nvalidationGate: Define record freshness, required fields, exclusivity, duplicate rules, replacement rules and permitted source use.\nevidenceLabels: Active Test",
+      "sku": {
+        "id": 2,
+        "name": "Researched Leads",
+        "status": "Testing",
+        "quadrant": "Market Penetration",
+        "served": "Firm Owner",
+        "operators": "Engine + Jon",
+        "outcome": "Deliver researched records that match the firm’s criteria for outreach by the firm’s own team.",
+        "includes": [
+          "Filing research",
+          "Criteria matching",
+          "Pipeline deduplication",
+          "Review queue",
+          "Agreed data fields"
+        ],
+        "priceHypothesis": "Per-record price defined in each proposal.",
+        "capacityEstimate": "3 setup hours and 3 hours per month per firm (est.). Planning cap: 4 firms.",
+        "delivery": "The Engine researches, matches and deduplicates records. Jon clears exceptions from the review queue.",
+        "validationGate": "Define record freshness, required fields, exclusivity, duplicate rules, replacement rules and permitted source use.",
+        "evidenceLabels": [
+          "Active Test"
+        ]
+      }
+    },
+    {
+      "id": "sku-3",
+      "label": "Signal Feed",
+      "status": "proposal",
+      "cluster": "Current worldmap overlay",
+      "overlay": true,
+      "evidenceIds": [
+        "ev-sku-3"
+      ],
+      "description": "id: 3\nname: Signal Feed\nstatus: Next\nquadrant: Product Development\nserved: Firm Owner\noperators: Engine + Jon\noutcome: Provide a proposed weekly Monday batch of newly matched filings.\nincludes: Weekly batch; Available contact details; Pipeline deduplication; Monthly activity report\npriceHypothesis: $500–$1,000 per month (est.).\ncapacityEstimate: 4 setup hours and 4 hours per month per firm (est.). Planning cap: 5 firms.\ndelivery: The Engine prepares the feed. Jon reviews exceptions and reports activity.\nvalidationGate: Test source reliability, match accuracy, usable-record rate, buyer usage and renewal intent.\nevidenceLabels: External Signal; Untested Assumption",
+      "sku": {
+        "id": 3,
+        "name": "Signal Feed",
+        "status": "Next",
+        "quadrant": "Product Development",
+        "served": "Firm Owner",
+        "operators": "Engine + Jon",
+        "outcome": "Provide a proposed weekly Monday batch of newly matched filings.",
+        "includes": [
+          "Weekly batch",
+          "Available contact details",
+          "Pipeline deduplication",
+          "Monthly activity report"
+        ],
+        "priceHypothesis": "$500–$1,000 per month (est.).",
+        "capacityEstimate": "4 setup hours and 4 hours per month per firm (est.). Planning cap: 5 firms.",
+        "delivery": "The Engine prepares the feed. Jon reviews exceptions and reports activity.",
+        "validationGate": "Test source reliability, match accuracy, usable-record rate, buyer usage and renewal intent.",
+        "evidenceLabels": [
+          "External Signal",
+          "Untested Assumption"
+        ]
+      }
+    },
+    {
+      "id": "sku-4",
+      "label": "Lead Leak Audit",
+      "status": "proposal",
+      "cluster": "Current worldmap overlay",
+      "overlay": true,
+      "evidenceIds": [
+        "ev-sku-4"
+      ],
+      "description": "id: 4\nname: Lead Leak Audit\nstatus: Next\nquadrant: Product Development\nserved: Firm Owner\noperators: Jon\noutcome: Identify where paid lead opportunities are lost between arrival, response, follow-up and handoff.\nincludes: Written review of lead sources; Response-time review; Follow-up review; Handoff review; Prioritized correction list\npriceHypothesis: $500–$750 one time, credited toward SKU 5 if purchased within the stated proposal period (est.).\ncapacityEstimate: 4 hours per audit (est.). Planning cap: 2 audits per month.\ndelivery: Written asynchronous review using a questionnaire and an approved CRM export.\nvalidationGate: Define minimum CRM fields, analysis period, data-handling process and the outcome when the export is incomplete.\nevidenceLabels: External Signal; Untested Assumption",
+      "sku": {
+        "id": 4,
+        "name": "Lead Leak Audit",
+        "status": "Next",
+        "quadrant": "Product Development",
+        "served": "Firm Owner",
+        "operators": "Jon",
+        "outcome": "Identify where paid lead opportunities are lost between arrival, response, follow-up and handoff.",
+        "includes": [
+          "Written review of lead sources",
+          "Response-time review",
+          "Follow-up review",
+          "Handoff review",
+          "Prioritized correction list"
+        ],
+        "priceHypothesis": "$500–$750 one time, credited toward SKU 5 if purchased within the stated proposal period (est.).",
+        "capacityEstimate": "4 hours per audit (est.). Planning cap: 2 audits per month.",
+        "delivery": "Written asynchronous review using a questionnaire and an approved CRM export.",
+        "validationGate": "Define minimum CRM fields, analysis period, data-handling process and the outcome when the export is incomplete.",
+        "evidenceLabels": [
+          "External Signal",
+          "Untested Assumption"
+        ]
+      }
+    },
+    {
+      "id": "sku-5",
+      "label": "Five-Minute Response",
+      "status": "proposal",
+      "cluster": "Current worldmap overlay",
+      "overlay": true,
+      "evidenceIds": [
+        "ev-sku-5"
+      ],
+      "description": "id: 5\nname: Five-Minute Response\nstatus: Next\nquadrant: Product Development\nserved: Firm Owner\noperators: Jon + Automation\noutcome: Send the first approved response within five minutes for eligible inbound leads and place a case brief in the CRM.\nincludes: Approved instant response; Routing to an assigned representative; Follow-up sequence; CRM handoff; Case brief; Monthly activity report\npriceHypothesis: $1,800–$3,200 setup plus $300–$500 per month (est.).\ncapacityEstimate: 10 setup hours and 1 hour per month per firm (est.).\ndelivery: Jon builds and tests the workflow. Automation runs the approved process.\nvalidationGate: Define eligible leads, supported channels, operating hours, consent assumptions, integration scope, outage handling and response-time measurement.\nevidenceLabels: External Signal; Untested Assumption",
+      "sku": {
+        "id": 5,
+        "name": "Five-Minute Response",
+        "status": "Next",
+        "quadrant": "Product Development",
+        "served": "Firm Owner",
+        "operators": "Jon + Automation",
+        "outcome": "Send the first approved response within five minutes for eligible inbound leads and place a case brief in the CRM.",
+        "includes": [
+          "Approved instant response",
+          "Routing to an assigned representative",
+          "Follow-up sequence",
+          "CRM handoff",
+          "Case brief",
+          "Monthly activity report"
+        ],
+        "priceHypothesis": "$1,800–$3,200 setup plus $300–$500 per month (est.).",
+        "capacityEstimate": "10 setup hours and 1 hour per month per firm (est.).",
+        "delivery": "Jon builds and tests the workflow. Automation runs the approved process.",
+        "validationGate": "Define eligible leads, supported channels, operating hours, consent assumptions, integration scope, outage handling and response-time measurement.",
+        "evidenceLabels": [
+          "External Signal",
+          "Untested Assumption"
+        ]
+      }
+    },
+    {
+      "id": "sku-6",
+      "label": "After-Hours Intake",
+      "status": "proposal",
+      "cluster": "Current worldmap overlay",
+      "overlay": true,
+      "evidenceIds": [
+        "ev-sku-6"
+      ],
+      "description": "id: 6\nname: After-Hours Intake\nstatus: Next\nquadrant: Product Development\nserved: Firm Owner\noperators: Jon + Automation\noutcome: Reduce missed after-hours enquiries and rebook eligible no-shows.\nincludes: After-hours response for eligible inbound enquiries (no filing-derived phone outreach limit is implied); Qualification prompts; Booking; Reminders; No-show rebooking; CRM writeback\npriceHypothesis: $400–$700 per month (est.).\ncapacityEstimate: 8 setup hours and 2 hours per month per firm (est.).\ndelivery: Jon builds and tests the workflow. Automation runs the approved process.\nvalidationGate: Define supported channels, consent evidence, escalation rules, usage costs, booking rules and human handoff.\nevidenceLabels: External Signal; Untested Assumption",
+      "sku": {
+        "id": 6,
+        "name": "After-Hours Intake",
+        "status": "Next",
+        "quadrant": "Product Development",
+        "served": "Firm Owner",
+        "operators": "Jon + Automation",
+        "outcome": "Reduce missed after-hours enquiries and rebook eligible no-shows.",
+        "includes": [
+          "After-hours response for eligible inbound enquiries (no filing-derived phone outreach limit is implied)",
+          "Qualification prompts",
+          "Booking",
+          "Reminders",
+          "No-show rebooking",
+          "CRM writeback"
+        ],
+        "priceHypothesis": "$400–$700 per month (est.).",
+        "capacityEstimate": "8 setup hours and 2 hours per month per firm (est.).",
+        "delivery": "Jon builds and tests the workflow. Automation runs the approved process.",
+        "validationGate": "Define supported channels, consent evidence, escalation rules, usage costs, booking rules and human handoff.",
+        "evidenceLabels": [
+          "External Signal",
+          "Untested Assumption"
+        ]
+      }
+    },
+    {
+      "id": "sku-7",
+      "label": "Dead-Lead Reactivation",
+      "status": "proposal",
+      "cluster": "Current worldmap overlay",
+      "overlay": true,
+      "evidenceIds": [
+        "ev-sku-7"
+      ],
+      "description": "id: 7\nname: Dead-Lead Reactivation\nstatus: Next\nquadrant: Product Development\nserved: Firm Owner\noperators: Jon + Automation\noutcome: Test whether compliant reactivation can recover value from eligible past leads.\nincludes: Approved text and email sequences; Eligibility and suppression checks; Booking; Opt-out handling; Monthly activity report\npriceHypothesis: $1,000 setup plus $500 per month (est.).\ncapacityEstimate: 6 setup hours and 2 hours per month per firm (est.).\ndelivery: Jon builds and tests the workflow. Automation runs it only for records approved for the relevant channel.\nvalidationGate: Require documented channel eligibility or consent, suppression handling, opt-out propagation, retention rules and legal review before launch.\nevidenceLabels: External Signal; Untested Assumption",
+      "sku": {
+        "id": 7,
+        "name": "Dead-Lead Reactivation",
+        "status": "Next",
+        "quadrant": "Product Development",
+        "served": "Firm Owner",
+        "operators": "Jon + Automation",
+        "outcome": "Test whether compliant reactivation can recover value from eligible past leads.",
+        "includes": [
+          "Approved text and email sequences",
+          "Eligibility and suppression checks",
+          "Booking",
+          "Opt-out handling",
+          "Monthly activity report"
+        ],
+        "priceHypothesis": "$1,000 setup plus $500 per month (est.).",
+        "capacityEstimate": "6 setup hours and 2 hours per month per firm (est.).",
+        "delivery": "Jon builds and tests the workflow. Automation runs it only for records approved for the relevant channel.",
+        "validationGate": "Require documented channel eligibility or consent, suppression handling, opt-out propagation, retention rules and legal review before launch.",
+        "evidenceLabels": [
+          "External Signal",
+          "Untested Assumption"
+        ]
+      }
+    },
+    {
+      "id": "sku-8",
+      "label": "Managed Signal Engine",
+      "status": "proposal",
+      "cluster": "Current worldmap overlay",
+      "overlay": true,
+      "evidenceIds": [
+        "ev-sku-8"
+      ],
+      "description": "id: 8\nname: Managed Signal Engine\nstatus: Later\nquadrant: Product Development\nserved: Firm Owner\noperators: Engine + Jon\noutcome: Operate a private filing-research environment for one firm.\nincludes: Dedicated environment; Source monitoring; Matching rules; Review queue; Monthly activity report\npriceHypothesis: $1,500–$3,000 per month, finalized by proposal and scope (est.).\ncapacityEstimate: 20 setup hours and 6 hours per month (est.). Planning cap: 1 firm.\ndelivery: The Engine performs scheduled work. Jon monitors exceptions, quality and reporting.\nvalidationGate: Define hosting, access control, retention, deletion, backup, security, monitoring, incident response and support boundaries.\nevidenceLabels: Untested Assumption",
+      "sku": {
+        "id": 8,
+        "name": "Managed Signal Engine",
+        "status": "Later",
+        "quadrant": "Product Development",
+        "served": "Firm Owner",
+        "operators": "Engine + Jon",
+        "outcome": "Operate a private filing-research environment for one firm.",
+        "includes": [
+          "Dedicated environment",
+          "Source monitoring",
+          "Matching rules",
+          "Review queue",
+          "Monthly activity report"
+        ],
+        "priceHypothesis": "$1,500–$3,000 per month, finalized by proposal and scope (est.).",
+        "capacityEstimate": "20 setup hours and 6 hours per month (est.). Planning cap: 1 firm.",
+        "delivery": "The Engine performs scheduled work. Jon monitors exceptions, quality and reporting.",
+        "validationGate": "Define hosting, access control, retention, deletion, backup, security, monitoring, incident response and support boundaries.",
+        "evidenceLabels": [
+          "Untested Assumption"
+        ]
+      }
+    },
+    {
+      "id": "sku-9",
+      "label": "Intake Team AI Workshop",
+      "status": "proposal",
+      "cluster": "Current worldmap overlay",
+      "overlay": true,
+      "evidenceIds": [
+        "ev-sku-9"
+      ],
+      "description": "id: 9\nname: Intake Team AI Workshop\nstatus: Next\nquadrant: Product Development\nserved: Firm Owner\noperators: Jon\noutcome: Help an intake team build and test one scoped AI workflow during a practical working session.\nincludes: One evening session; Worked intake examples; Teaching content is original, synthetic, public-domain or used with written permission; Guided workflow build; Recording where permitted; Action notes\npriceHypothesis: $1,000–$3,000 per session (est.).\ncapacityEstimate: 6 hours per session including preparation (est.). Planning cap: 1 session per month.\ndelivery: Jon prepares and delivers the session.\nvalidationGate: Test willingness to pay, implementation rate, recording permission, preparation time and follow-up support burden.\nevidenceLabels: External Signal; Untested Assumption",
+      "sku": {
+        "id": 9,
+        "name": "Intake Team AI Workshop",
+        "status": "Next",
+        "quadrant": "Product Development",
+        "served": "Firm Owner",
+        "operators": "Jon",
+        "outcome": "Help an intake team build and test one scoped AI workflow during a practical working session.",
+        "includes": [
+          "One evening session",
+          "Worked intake examples",
+          "Teaching content is original, synthetic, public-domain or used with written permission",
+          "Guided workflow build",
+          "Recording where permitted",
+          "Action notes"
+        ],
+        "priceHypothesis": "$1,000–$3,000 per session (est.).",
+        "capacityEstimate": "6 hours per session including preparation (est.). Planning cap: 1 session per month.",
+        "delivery": "Jon prepares and delivers the session.",
+        "validationGate": "Test willingness to pay, implementation rate, recording permission, preparation time and follow-up support burden.",
+        "evidenceLabels": [
+          "External Signal",
+          "Untested Assumption"
+        ]
+      }
+    },
+    {
+      "id": "sku-10",
+      "label": "State Lien and Judgment Feed",
+      "status": "proposal",
+      "cluster": "Current worldmap overlay",
+      "overlay": true,
+      "evidenceIds": [
+        "ev-sku-10"
+      ],
+      "description": "id: 10\nname: State Lien and Judgment Feed\nstatus: Later\nquadrant: Product Development\nserved: Firm Owner\noperators: Engine + Jon\noutcome: Extend the filing-signal model beyond federal tax lien notices for existing tax-resolution firms.\nincludes: Approved state or local filing sources; Criteria matching; Pipeline deduplication; Proposed weekly feed; Monthly activity report\npriceHypothesis: $500–$1,000 per month (est.).\ncapacityEstimate: 12 hours per approved filing source, followed by 4 hours per month per firm (est.).\ndelivery: The Engine retrieves and matches records from approved sources. Jon extends the workflow and reviews exceptions.\nvalidationGate: Validate access method, terms, commercial reuse, coverage, update cadence, data quality and economics separately for every filing source.\nevidenceLabels: External Signal; Untested Assumption\nclassification: Product Development while sold to existing tax-resolution market; reclassify a new-buyer version as Diversification.",
+      "sku": {
+        "id": 10,
+        "name": "State Lien and Judgment Feed",
+        "status": "Later",
+        "quadrant": "Product Development",
+        "served": "Firm Owner",
+        "operators": "Engine + Jon",
+        "outcome": "Extend the filing-signal model beyond federal tax lien notices for existing tax-resolution firms.",
+        "includes": [
+          "Approved state or local filing sources",
+          "Criteria matching",
+          "Pipeline deduplication",
+          "Proposed weekly feed",
+          "Monthly activity report"
+        ],
+        "priceHypothesis": "$500–$1,000 per month (est.).",
+        "capacityEstimate": "12 hours per approved filing source, followed by 4 hours per month per firm (est.).",
+        "delivery": "The Engine retrieves and matches records from approved sources. Jon extends the workflow and reviews exceptions.",
+        "validationGate": "Validate access method, terms, commercial reuse, coverage, update cadence, data quality and economics separately for every filing source.",
+        "evidenceLabels": [
+          "External Signal",
+          "Untested Assumption"
+        ],
+        "classification": "Product Development while sold to existing tax-resolution market; reclassify a new-buyer version as Diversification."
+      }
+    },
+    {
+      "id": "sku-11",
+      "label": "Plinko Pocket Sensemaker",
+      "status": "proposal",
+      "cluster": "Current worldmap overlay",
+      "overlay": true,
+      "evidenceIds": [
+        "ev-sku-11"
+      ],
+      "description": "id: 11\nname: Plinko Pocket Sensemaker\nstatus: Next\nquadrant: Diversification\nserved: Consultant / Fractional Executive / Agency Strategist / Workshop Facilitator\noperators: Jon + Hermes-powered Pocket\noutcome: Turn an approved client conversation into a clear, evidence-linked, editable consulting presentation and action roadmap.\nincludes: Transcript intake and evidence extraction; Themes, tensions and assumptions; Actor, dependency and bottleneck map; Executive narrative: situation → problem → options → recommendation → roadmap; Branded editable presentation, speaker notes and source appendix; Consultant review before external sharing\npriceHypothesis: $250–$500 per reviewed presentation package (est. pilot price hypothesis).\ncapacityEstimate: Production and revision hours to be measured per package (est.; not yet set).\ndelivery: Pocket workspace with Hermes-powered processing, review checkpoints and editable exports. MVP accepts pasted or uploaded transcripts; live voice, autonomous research and complex meeting integrations are out of scope.\nvalidationGate: Run two unrelated paid pilots; measure preparation and editing time, traceability of claims, confidentiality handling, revision load and repeat purchase. Separate direct quotes, consultant interpretations and untested hypotheses.\nevidenceLabels: Untested Assumption",
+      "sku": {
+        "id": 11,
+        "name": "Plinko Pocket Sensemaker",
+        "status": "Next",
+        "quadrant": "Diversification",
+        "served": "Consultant / Fractional Executive / Agency Strategist / Workshop Facilitator",
+        "operators": "Jon + Hermes-powered Pocket",
+        "outcome": "Turn an approved client conversation into a clear, evidence-linked, editable consulting presentation and action roadmap.",
+        "includes": [
+          "Transcript intake and evidence extraction",
+          "Themes, tensions and assumptions",
+          "Actor, dependency and bottleneck map",
+          "Executive narrative: situation → problem → options → recommendation → roadmap",
+          "Branded editable presentation, speaker notes and source appendix",
+          "Consultant review before external sharing"
+        ],
+        "priceHypothesis": "$250–$500 per reviewed presentation package (est. pilot price hypothesis).",
+        "capacityEstimate": "Production and revision hours to be measured per package (est.; not yet set).",
+        "delivery": "Pocket workspace with Hermes-powered processing, review checkpoints and editable exports. MVP accepts pasted or uploaded transcripts; live voice, autonomous research and complex meeting integrations are out of scope.",
+        "validationGate": "Run two unrelated paid pilots; measure preparation and editing time, traceability of claims, confidentiality handling, revision load and repeat purchase. Separate direct quotes, consultant interpretations and untested hypotheses.",
+        "evidenceLabels": [
+          "Untested Assumption"
+        ]
+      }
+    },
+    {
+      "id": "sku-12",
+      "label": "Plinko Pocket Operator OS",
+      "status": "proposal",
+      "cluster": "Current worldmap overlay",
+      "overlay": true,
+      "evidenceIds": [
+        "ev-sku-12"
+      ],
+      "description": "id: 12\nname: Plinko Pocket Operator OS\nstatus: Next\nquadrant: Diversification\nserved: Solo Consultant / Small Agency Owner / Owner-Operator\noperators: Jon + Customer-owned Hermes environment + Pocket\noutcome: Keep client context, decisions, approved next actions and recurring briefs in one configured, supported working environment.\nincludes: Pocket onboarding and client-context setup; Two configured workflow stations: Client Context & Sensemaking; Delivery & Follow-Through; Reusable skills and documented approval boundaries; Scheduled briefs and operating guide; Monthly maintenance with bounded scope; Customer pays model, tool and hosting charges directly or by separate metering\npriceHypothesis: $1,500–$3,000 setup plus $250–$500/month bounded maintenance (est. pilot price hypothesis).\ncapacityEstimate: Setup and monthly support hours to be measured per deployment (est.; not yet set).\ndelivery: Customer-owned Hermes environment connected to Pocket; scoped Plinko implementation and ongoing support. Not a generic Hermes wrapper or standalone hosting offer.\nvalidationGate: Complete two paid deployments; measure repeatability of installation, isolation, weekly use, reliability and support burden. Keep model, tool and hosting usage separate from Plinko fees.\nevidenceLabels: Untested Assumption",
+      "sku": {
+        "id": 12,
+        "name": "Plinko Pocket Operator OS",
+        "status": "Next",
+        "quadrant": "Diversification",
+        "served": "Solo Consultant / Small Agency Owner / Owner-Operator",
+        "operators": "Jon + Customer-owned Hermes environment + Pocket",
+        "outcome": "Keep client context, decisions, approved next actions and recurring briefs in one configured, supported working environment.",
+        "includes": [
+          "Pocket onboarding and client-context setup",
+          "Two configured workflow stations: Client Context & Sensemaking; Delivery & Follow-Through",
+          "Reusable skills and documented approval boundaries",
+          "Scheduled briefs and operating guide",
+          "Monthly maintenance with bounded scope",
+          "Customer pays model, tool and hosting charges directly or by separate metering"
+        ],
+        "priceHypothesis": "$1,500–$3,000 setup plus $250–$500/month bounded maintenance (est. pilot price hypothesis).",
+        "capacityEstimate": "Setup and monthly support hours to be measured per deployment (est.; not yet set).",
+        "delivery": "Customer-owned Hermes environment connected to Pocket; scoped Plinko implementation and ongoing support. Not a generic Hermes wrapper or standalone hosting offer.",
+        "validationGate": "Complete two paid deployments; measure repeatability of installation, isolation, weekly use, reliability and support burden. Keep model, tool and hosting usage separate from Plinko fees.",
+        "evidenceLabels": [
+          "Untested Assumption"
+        ]
+      }
+    },
+    {
+      "id": "sku-13",
+      "label": "First AI Workflow",
+      "status": "proposal",
+      "cluster": "Current worldmap overlay",
+      "overlay": true,
+      "evidenceIds": [
+        "ev-sku-13"
+      ],
+      "description": "id: 13\nname: First AI Workflow\nstatus: Next\nquadrant: Diversification\nserved: Learner\noperators: Jon\noutcome: Build and test one scoped automation for the learner’s own work across three sessions.\nincludes: Three one-to-one evening sessions; Workflow scoping; Guided implementation; Asynchronous build review\npriceHypothesis: $600–$800 per package (est.).\ncapacityEstimate: 4 hours per learner (est.). Planning cap: 2 learners per month.\ndelivery: Jon teaches and reviews the build.\nvalidationGate: Test learner completion, time to first working prototype, support burden, willingness to pay and referral intent.\nevidenceLabels: Untested Assumption",
+      "sku": {
+        "id": 13,
+        "name": "First AI Workflow",
+        "status": "Next",
+        "quadrant": "Diversification",
+        "served": "Learner",
+        "operators": "Jon",
+        "outcome": "Build and test one scoped automation for the learner’s own work across three sessions.",
+        "includes": [
+          "Three one-to-one evening sessions",
+          "Workflow scoping",
+          "Guided implementation",
+          "Asynchronous build review"
+        ],
+        "priceHypothesis": "$600–$800 per package (est.).",
+        "capacityEstimate": "4 hours per learner (est.). Planning cap: 2 learners per month.",
+        "delivery": "Jon teaches and reviews the build.",
+        "validationGate": "Test learner completion, time to first working prototype, support burden, willingness to pay and referral intent.",
+        "evidenceLabels": [
+          "Untested Assumption"
+        ]
+      }
+    },
+    {
+      "id": "sku-14",
+      "label": "Evening Cohort",
+      "status": "proposal",
+      "cluster": "Current worldmap overlay",
+      "overlay": true,
+      "evidenceIds": [
+        "ev-sku-14"
+      ],
+      "description": "id: 14\nname: Evening Cohort\nstatus: Later\nquadrant: Diversification\nserved: Learner\noperators: Jon\noutcome: Help participants build and test a practical workflow prototype over four weeks.\nincludes: Four live evening sessions; Templates; Group feedback; Build demonstrations; Completion review\npriceHypothesis: $599–$799 per seat (est.).\ncapacityEstimate: 20 hours to build the initial program and 8 hours per run (est.). Planning cap: 1 run per quarter.\ndelivery: Jon develops and delivers the cohort.\nvalidationGate: Validate audience acquisition, minimum cohort size, completion rate, support burden and conversion from SKU 13 or the free community.\nevidenceLabels: Untested Assumption",
+      "sku": {
+        "id": 14,
+        "name": "Evening Cohort",
+        "status": "Later",
+        "quadrant": "Diversification",
+        "served": "Learner",
+        "operators": "Jon",
+        "outcome": "Help participants build and test a practical workflow prototype over four weeks.",
+        "includes": [
+          "Four live evening sessions",
+          "Templates",
+          "Group feedback",
+          "Build demonstrations",
+          "Completion review"
+        ],
+        "priceHypothesis": "$599–$799 per seat (est.).",
+        "capacityEstimate": "20 hours to build the initial program and 8 hours per run (est.). Planning cap: 1 run per quarter.",
+        "delivery": "Jon develops and delivers the cohort.",
+        "validationGate": "Validate audience acquisition, minimum cohort size, completion rate, support burden and conversion from SKU 13 or the free community.",
+        "evidenceLabels": [
+          "Untested Assumption"
+        ]
+      }
+    },
+    {
+      "id": "sku-15",
+      "label": "Builders Community",
+      "status": "proposal",
+      "cluster": "Current worldmap overlay",
+      "overlay": true,
+      "evidenceIds": [
+        "ev-sku-15"
+      ],
+      "description": "id: 15\nname: Builders Community\nstatus: Later\nquadrant: Diversification\nserved: Learner\noperators: Jon\noutcome: Test a recurring learning environment built around practical workflow demonstrations and peer progress.\nincludes: Weekly recorded builds; Reusable templates; One evening question-and-answer session each month; Open community remains free.\npriceHypothesis: $39 per month for the proposed paid level (est.).\ncapacityEstimate: 8 hours per month regardless of member count (est.).\ndelivery: Jon prepares the recordings, templates and monthly live session.\nvalidationGate: Validate recurring engagement, churn, content-production time, and that teaching/community material is original, synthetic, public-domain or used with written permission; permission controls and willingness to pay before launch.\nevidenceLabels: Untested Assumption",
+      "sku": {
+        "id": 15,
+        "name": "Builders Community",
+        "status": "Later",
+        "quadrant": "Diversification",
+        "served": "Learner",
+        "operators": "Jon",
+        "outcome": "Test a recurring learning environment built around practical workflow demonstrations and peer progress.",
+        "includes": [
+          "Weekly recorded builds",
+          "Reusable templates",
+          "One evening question-and-answer session each month",
+          "Open community remains free."
+        ],
+        "priceHypothesis": "$39 per month for the proposed paid level (est.).",
+        "capacityEstimate": "8 hours per month regardless of member count (est.).",
+        "delivery": "Jon prepares the recordings, templates and monthly live session.",
+        "validationGate": "Validate recurring engagement, churn, content-production time, and that teaching/community material is original, synthetic, public-domain or used with written permission; permission controls and willingness to pay before launch.",
+        "evidenceLabels": [
+          "Untested Assumption"
+        ]
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "from": "acquisition",
+      "to": "b2b",
+      "label": "brings discovery calls into",
+      "status": "explicit",
+      "originalStatus": "stated",
+      "evidenceIds": [
+        "ev-e1"
+      ],
+      "description": "Reported current state in the discussion, not independently verified."
+    },
+    {
+      "id": "e2",
+      "from": "acquisition",
+      "to": "b2b",
+      "label": "email currently outperforms dialing for",
+      "status": "explicit",
+      "originalStatus": "stated",
+      "evidenceIds": [
+        "ev-e2"
+      ],
+      "description": "Reported current state in the discussion, not independently verified."
+    },
+    {
+      "id": "e3",
+      "from": "qualification",
+      "to": "b2b",
+      "label": "filters prospects for",
+      "status": "explicit",
+      "originalStatus": "stated",
+      "evidenceIds": [
+        "ev-e3"
+      ],
+      "description": "Reported current state in the discussion, not independently verified."
+    },
+    {
+      "id": "e4",
+      "from": "b2b",
+      "to": "intake",
+      "label": "starts discovery with",
+      "status": "explicit",
+      "originalStatus": "stated",
+      "evidenceIds": [
+        "ev-e4"
+      ],
+      "description": "Reported current state in the discussion, not independently verified."
+    },
+    {
+      "id": "e5",
+      "from": "intake",
+      "to": "managed",
+      "label": "reveals delivery preference for",
+      "status": "explicit",
+      "originalStatus": "stated",
+      "evidenceIds": [
+        "ev-e5"
+      ],
+      "description": "Reported current state in the discussion, not independently verified."
+    },
+    {
+      "id": "e6",
+      "from": "intake",
+      "to": "mechanics",
+      "label": "establishes operational fit at",
+      "status": "explicit",
+      "originalStatus": "stated",
+      "evidenceIds": [
+        "ev-e6"
+      ],
+      "description": "Reported current state in the discussion, not independently verified."
+    },
+    {
+      "id": "e7",
+      "from": "mechanics",
+      "to": "gate",
+      "label": "is necessary but insufficient for",
+      "status": "explicit",
+      "originalStatus": "speaker_claim",
+      "evidenceIds": [
+        "ev-e7"
+      ],
+      "description": "A strategic interpretation asserted in the discussion, not established causality."
+    },
+    {
+      "id": "e8",
+      "from": "pricing",
+      "to": "trust",
+      "label": "reveals a possible missing layer of",
+      "status": "interpretation",
+      "originalStatus": "inference",
+      "evidenceIds": [
+        "ev-e8"
+      ],
+      "description": "Analyst connection across passages; not directly asserted."
+    },
+    {
+      "id": "e9",
+      "from": "experience",
+      "to": "trust",
+      "label": "earns understanding-based",
+      "status": "proposal",
+      "originalStatus": "proposal",
+      "evidenceIds": [
+        "ev-e9"
+      ],
+      "description": "Recommended or intended future action."
+    },
+    {
+      "id": "e10",
+      "from": "intake",
+      "to": "experience",
+      "label": "should be affirmed then laddered into",
+      "status": "proposal",
+      "originalStatus": "proposal",
+      "evidenceIds": [
+        "ev-e10"
+      ],
+      "description": "Recommended or intended future action."
+    },
+    {
+      "id": "e11",
+      "from": "experience",
+      "to": "growth",
+      "label": "exposes burnout or comfort tensions around",
+      "status": "proposal",
+      "originalStatus": "hypothetical",
+      "evidenceIds": [
+        "ev-e11"
+      ],
+      "description": "Illustrative possible customer situation."
+    },
+    {
+      "id": "e12",
+      "from": "risk",
+      "to": "growth",
+      "label": "may protect equilibrium against",
+      "status": "proposal",
+      "originalStatus": "hypothetical",
+      "evidenceIds": [
+        "ev-e12"
+      ],
+      "description": "Illustrative possible customer situation."
+    },
+    {
+      "id": "e13",
+      "from": "experience",
+      "to": "gate",
+      "label": "helps locate the real",
+      "status": "explicit",
+      "originalStatus": "speaker_claim",
+      "evidenceIds": [
+        "ev-e13"
+      ],
+      "description": "A strategic interpretation asserted in the discussion, not established causality."
+    },
+    {
+      "id": "e14",
+      "from": "risk",
+      "to": "gate",
+      "label": "shapes willingness to cross",
+      "status": "proposal",
+      "originalStatus": "proposal",
+      "evidenceIds": [
+        "ev-e14"
+      ],
+      "description": "Recommended or intended future action."
+    },
+    {
+      "id": "e15",
+      "from": "growth",
+      "to": "gate",
+      "label": "supplies aspirations to",
+      "status": "explicit",
+      "originalStatus": "speaker_claim",
+      "evidenceIds": [
+        "ev-e15"
+      ],
+      "description": "A strategic interpretation asserted in the discussion, not established causality."
+    },
+    {
+      "id": "e16",
+      "from": "mechanics",
+      "to": "gate",
+      "label": "supplies capabilities to",
+      "status": "explicit",
+      "originalStatus": "speaker_claim",
+      "evidenceIds": [
+        "ev-e16"
+      ],
+      "description": "A strategic interpretation asserted in the discussion, not established causality."
+    },
+    {
+      "id": "e17",
+      "from": "trust",
+      "to": "gate",
+      "label": "makes safe commitment possible at",
+      "status": "explicit",
+      "originalStatus": "speaker_claim",
+      "evidenceIds": [
+        "ev-e17"
+      ],
+      "description": "A strategic interpretation asserted in the discussion, not established causality."
+    },
+    {
+      "id": "e18",
+      "from": "test",
+      "to": "risk",
+      "label": "reduces uncertainty in",
+      "status": "explicit",
+      "originalStatus": "speaker_claim",
+      "evidenceIds": [
+        "ev-e18"
+      ],
+      "description": "A strategic interpretation asserted in the discussion, not established causality."
+    },
+    {
+      "id": "e19",
+      "from": "b2b",
+      "to": "test",
+      "label": "has uncertain client quality requiring",
+      "status": "explicit",
+      "originalStatus": "speaker_claim",
+      "evidenceIds": [
+        "ev-e19"
+      ],
+      "description": "A strategic interpretation asserted in the discussion, not established causality."
+    },
+    {
+      "id": "e20",
+      "from": "trust",
+      "to": "pricing",
+      "label": "should precede movement into",
+      "status": "proposal",
+      "originalStatus": "proposal",
+      "evidenceIds": [
+        "ev-e20"
+      ],
+      "description": "Recommended or intended future action."
+    },
+    {
+      "id": "e21",
+      "from": "belief",
+      "to": "safe_growth",
+      "label": "can express itself as",
+      "status": "proposal",
+      "originalStatus": "prototype",
+      "evidenceIds": [
+        "ev-e21"
+      ],
+      "description": "Explicit sketch/example, not finalized positioning."
+    },
+    {
+      "id": "e22",
+      "from": "safe_growth",
+      "to": "risk",
+      "label": "respects existing operating commitments in",
+      "status": "proposal",
+      "originalStatus": "hypothetical",
+      "evidenceIds": [
+        "ev-e22"
+      ],
+      "description": "Illustrative possible customer situation."
+    },
+    {
+      "id": "e23",
+      "from": "safe_growth",
+      "to": "b2b",
+      "label": "is proposed positioning for",
+      "status": "proposal",
+      "originalStatus": "prototype",
+      "evidenceIds": [
+        "ev-e23"
+      ],
+      "description": "Explicit sketch/example, not finalized positioning."
+    },
+    {
+      "id": "e24",
+      "from": "belief",
+      "to": "b2c",
+      "label": "is equally relevant to",
+      "status": "proposal",
+      "originalStatus": "proposal",
+      "evidenceIds": [
+        "ev-e24"
+      ],
+      "description": "Recommended or intended future action."
+    },
+    {
+      "id": "e25",
+      "from": "b2c",
+      "to": "workforce",
+      "label": "is being repositioned around",
+      "status": "proposal",
+      "originalStatus": "proposal",
+      "evidenceIds": [
+        "ev-e25"
+      ],
+      "description": "Recommended or intended future action."
+    },
+    {
+      "id": "e26",
+      "from": "workforce",
+      "to": "offload",
+      "label": "promises",
+      "status": "proposal",
+      "originalStatus": "proposal",
+      "evidenceIds": [
+        "ev-e26"
+      ],
+      "description": "Recommended or intended future action."
+    },
+    {
+      "id": "e27",
+      "from": "assets",
+      "to": "workforce",
+      "label": "contains material supporting",
+      "status": "explicit",
+      "originalStatus": "stated",
+      "evidenceIds": [
+        "ev-e27"
+      ],
+      "description": "Reported current state in the discussion, not independently verified."
+    },
+    {
+      "id": "e28",
+      "from": "assets",
+      "to": "journey",
+      "label": "currently challenges digestibility of",
+      "status": "explicit",
+      "originalStatus": "stated",
+      "evidenceIds": [
+        "ev-e28"
+      ],
+      "description": "Reported current state in the discussion, not independently verified."
+    },
+    {
+      "id": "e29",
+      "from": "inventory",
+      "to": "assets",
+      "label": "maps scope and purpose of",
+      "status": "proposal",
+      "originalStatus": "proposal",
+      "evidenceIds": [
+        "ev-e29"
+      ],
+      "description": "Recommended or intended future action."
+    },
+    {
+      "id": "e30",
+      "from": "inventory",
+      "to": "workforce",
+      "label": "connects technology to problems underlying",
+      "status": "proposal",
+      "originalStatus": "proposal",
+      "evidenceIds": [
+        "ev-e30"
+      ],
+      "description": "Recommended or intended future action."
+    },
+    {
+      "id": "e31",
+      "from": "inventory",
+      "to": "before_after",
+      "label": "enables shaping a concrete",
+      "status": "proposal",
+      "originalStatus": "proposal",
+      "evidenceIds": [
+        "ev-e31"
+      ],
+      "description": "Recommended or intended future action."
+    },
+    {
+      "id": "e32",
+      "from": "before_after",
+      "to": "offload",
+      "label": "makes the promise concrete for",
+      "status": "proposal",
+      "originalStatus": "proposal",
+      "evidenceIds": [
+        "ev-e32"
+      ],
+      "description": "Recommended or intended future action."
+    },
+    {
+      "id": "e33",
+      "from": "before_after",
+      "to": "journey",
+      "label": "shows the destination of",
+      "status": "proposal",
+      "originalStatus": "proposal",
+      "evidenceIds": [
+        "ev-e33"
+      ],
+      "description": "Recommended or intended future action."
+    },
+    {
+      "id": "e34",
+      "from": "journey",
+      "to": "buyin",
+      "label": "is distinct from the problem of",
+      "status": "explicit",
+      "originalStatus": "speaker_claim",
+      "evidenceIds": [
+        "ev-e34"
+      ],
+      "description": "A strategic interpretation asserted in the discussion, not established causality."
+    },
+    {
+      "id": "e35",
+      "from": "buyin",
+      "to": "b2c",
+      "label": "requires investment business case for",
+      "status": "proposal",
+      "originalStatus": "proposal",
+      "evidenceIds": [
+        "ev-e35"
+      ],
+      "description": "Recommended or intended future action."
+    },
+    {
+      "id": "e36",
+      "from": "b2c",
+      "to": "experience",
+      "label": "growth depends on understanding",
+      "status": "explicit",
+      "originalStatus": "speaker_claim",
+      "evidenceIds": [
+        "ev-e36"
+      ],
+      "description": "A strategic interpretation asserted in the discussion, not established causality."
+    },
+    {
+      "id": "e37",
+      "from": "worldmap",
+      "to": "consulting",
+      "label": "could structure",
+      "status": "proposal",
+      "originalStatus": "proposal",
+      "evidenceIds": [
+        "ev-e37"
+      ],
+      "description": "Recommended or intended future action."
+    },
+    {
+      "id": "e38",
+      "from": "consulting",
+      "to": "b2c",
+      "label": "could add a coaching-experience layer to",
+      "status": "proposal",
+      "originalStatus": "proposal",
+      "evidenceIds": [
+        "ev-e38"
+      ],
+      "description": "Recommended or intended future action."
+    },
+    {
+      "id": "e39",
+      "from": "worldmap",
+      "to": "journey",
+      "label": "provides a possible interactive pathway for",
+      "status": "proposal",
+      "originalStatus": "prototype",
+      "evidenceIds": [
+        "ev-e39"
+      ],
+      "description": "Explicit sketch/example, not finalized positioning."
+    },
+    {
+      "id": "e40",
+      "from": "worldmap",
+      "to": "assets",
+      "label": "organizes a repository of",
+      "status": "explicit",
+      "originalStatus": "stated",
+      "evidenceIds": [
+        "ev-e40"
+      ],
+      "description": "Reported current state in the discussion, not independently verified."
+    },
+    {
+      "id": "e41",
+      "from": "playbook",
+      "to": "consulting",
+      "label": "could turn repeated unblocking into reusable knowledge for",
+      "status": "proposal",
+      "originalStatus": "proposal",
+      "evidenceIds": [
+        "ev-e41"
+      ],
+      "description": "Recommended or intended future action."
+    },
+    {
+      "id": "e42",
+      "from": "playbook",
+      "to": "b2b",
+      "label": "builds on the tax sales playbook for",
+      "status": "explicit",
+      "originalStatus": "stated",
+      "evidenceIds": [
+        "ev-e42"
+      ],
+      "description": "Reported current state in the discussion, not independently verified."
+    },
+    {
+      "id": "e43",
+      "from": "playbook",
+      "to": "b2c",
+      "label": "could become a product supporting",
+      "status": "proposal",
+      "originalStatus": "proposal",
+      "evidenceIds": [
+        "ev-e43"
+      ],
+      "description": "Recommended or intended future action."
+    },
+    {
+      "id": "e44",
+      "from": "identity",
+      "to": "buyin",
+      "label": "makes investing in a possible self less scary for",
+      "status": "explicit",
+      "originalStatus": "speaker_claim",
+      "evidenceIds": [
+        "ev-e44"
+      ],
+      "description": "A strategic interpretation asserted in the discussion, not established causality."
+    },
+    {
+      "id": "e45",
+      "from": "identity",
+      "to": "before_after",
+      "label": "requires communicating the person's",
+      "status": "proposal",
+      "originalStatus": "proposal",
+      "evidenceIds": [
+        "ev-e45"
+      ],
+      "description": "Recommended or intended future action."
+    },
+    {
+      "id": "e46",
+      "from": "belief",
+      "to": "identity",
+      "label": "anchors archetype work for",
+      "status": "proposal",
+      "originalStatus": "proposal",
+      "evidenceIds": [
+        "ev-e46"
+      ],
+      "description": "Recommended or intended future action."
+    },
+    {
+      "id": "e47",
+      "from": "flywheel",
+      "to": "identity",
+      "label": "is described as a loop of",
+      "status": "explicit",
+      "originalStatus": "speaker_claim",
+      "evidenceIds": [
+        "ev-e47"
+      ],
+      "description": "A strategic interpretation asserted in the discussion, not established causality."
+    },
+    {
+      "id": "e48",
+      "from": "identity",
+      "to": "flywheel",
+      "label": "brand embodiment helps develop",
+      "status": "proposal",
+      "originalStatus": "proposal",
+      "evidenceIds": [
+        "ev-e48"
+      ],
+      "description": "Recommended or intended future action."
+    },
+    {
+      "id": "e49",
+      "from": "flywheel",
+      "to": "b2c",
+      "label": "is hypothesized to drive offer growth in",
+      "status": "explicit",
+      "originalStatus": "speaker_claim",
+      "evidenceIds": [
+        "ev-e49"
+      ],
+      "description": "A strategic interpretation asserted in the discussion, not established causality."
+    },
+    {
+      "id": "e50",
+      "from": "b2b",
+      "to": "b2c",
+      "label": "shares an experience gap with",
+      "status": "explicit",
+      "originalStatus": "stated",
+      "evidenceIds": [
+        "ev-e50"
+      ],
+      "description": "Reported current state in the discussion, not independently verified."
+    },
+    {
+      "id": "mapping-11",
+      "from": "worldmap",
+      "to": "sku-11",
+      "label": "could inform",
+      "status": "interpretation",
+      "originalStatus": "analyst_mapping",
+      "evidenceIds": [],
+      "overlay": true,
+      "description": "Proposed analyst alignment across separate sources. The transcript does not mention this SKU."
+    },
+    {
+      "id": "mapping-12",
+      "from": "workforce",
+      "to": "sku-12",
+      "label": "could inform",
+      "status": "interpretation",
+      "originalStatus": "analyst_mapping",
+      "evidenceIds": [],
+      "overlay": true,
+      "description": "Proposed analyst alignment across separate sources. The transcript does not mention this SKU."
+    }
+  ],
+  "evidence": [
+    {
+      "id": "ev-e1",
+      "sourceId": "transcript",
+      "timestamp": "00:02:54",
+      "segmentId": null,
+      "line": 116,
+      "speaker": null,
+      "quote": "email campaign plus me dialing, pitching"
+    },
+    {
+      "id": "ev-e2",
+      "sourceId": "transcript",
+      "timestamp": "00:03:11",
+      "segmentId": null,
+      "line": 128,
+      "speaker": null,
+      "quote": "The email campaign is the one that's performing right now."
+    },
+    {
+      "id": "ev-e3",
+      "sourceId": "transcript",
+      "timestamp": "00:06:21",
+      "segmentId": null,
+      "line": 293,
+      "speaker": null,
+      "quote": "There's already a filtering segmentation happening within the list."
+    },
+    {
+      "id": "ev-e4",
+      "sourceId": "transcript",
+      "timestamp": "00:06:43",
+      "segmentId": null,
+      "line": 308,
+      "speaker": null,
+      "quote": "in terms of their intake reality"
+    },
+    {
+      "id": "ev-e5",
+      "sourceId": "transcript",
+      "timestamp": "00:08:07",
+      "segmentId": null,
+      "line": 377,
+      "speaker": null,
+      "quote": "where we book the meetings versus them just having a list and booking the meetings."
+    },
+    {
+      "id": "ev-e6",
+      "sourceId": "transcript",
+      "timestamp": "00:09:27",
+      "segmentId": null,
+      "line": 437,
+      "speaker": null,
+      "quote": "this entire conversation so far lives at the mechanical level."
+    },
+    {
+      "id": "ev-e7",
+      "sourceId": "transcript",
+      "timestamp": "00:09:52",
+      "segmentId": null,
+      "line": 452,
+      "speaker": null,
+      "quote": "that's not the level at which any kind of real decision-making happens."
+    },
+    {
+      "id": "ev-e8",
+      "sourceId": "transcript",
+      "timestamp": "00:08:44",
+      "segmentId": null,
+      "line": 410,
+      "speaker": null,
+      "quote": "like, there's a guard that goes up."
+    },
+    {
+      "id": "ev-e9",
+      "sourceId": "transcript",
+      "timestamp": "00:16:55",
+      "segmentId": null,
+      "line": 713,
+      "speaker": null,
+      "quote": "earn trust around your understanding of their experience now"
+    },
+    {
+      "id": "ev-e10",
+      "sourceId": "transcript",
+      "timestamp": "00:14:34",
+      "segmentId": null,
+      "line": 623,
+      "speaker": null,
+      "quote": "before moving towards figuring out gaps, I'd take a moment to affirm what you've learned"
+    },
+    {
+      "id": "ev-e11",
+      "sourceId": "transcript",
+      "timestamp": "00:16:11",
+      "segmentId": null,
+      "line": 689,
+      "speaker": null,
+      "quote": "working really well for growing the business, but it's actually burning them out?"
+    },
+    {
+      "id": "ev-e12",
+      "sourceId": "transcript",
+      "timestamp": "00:16:30",
+      "segmentId": null,
+      "line": 704,
+      "speaker": null,
+      "quote": "we've finally found the equilibrium where we don't burn out"
+    },
+    {
+      "id": "ev-e13",
+      "sourceId": "transcript",
+      "timestamp": "00:18:25",
+      "segmentId": null,
+      "line": 764,
+      "speaker": null,
+      "quote": "the choice gate, the decision gate for them, doesn't live at the mechanical level."
+    },
+    {
+      "id": "ev-e14",
+      "sourceId": "transcript",
+      "timestamp": "00:19:15",
+      "segmentId": null,
+      "line": 800,
+      "speaker": null,
+      "quote": "how do they assess risk at that decision-making level."
+    },
+    {
+      "id": "ev-e15",
+      "sourceId": "transcript",
+      "timestamp": "00:19:31",
+      "segmentId": null,
+      "line": 812,
+      "speaker": null,
+      "quote": "and to our aspirational goals, and has the capabilities to get us there."
+    },
+    {
+      "id": "ev-e16",
+      "sourceId": "transcript",
+      "timestamp": "00:19:40",
+      "segmentId": null,
+      "line": 824,
+      "speaker": null,
+      "quote": "Do we actually have the capabilities to go somewhere?"
+    },
+    {
+      "id": "ev-e17",
+      "sourceId": "transcript",
+      "timestamp": "00:11:20",
+      "segmentId": null,
+      "line": 497,
+      "speaker": null,
+      "quote": "so that I can feel safe when I say yes."
+    },
+    {
+      "id": "ev-e18",
+      "sourceId": "transcript",
+      "timestamp": "00:19:10",
+      "segmentId": null,
+      "line": 797,
+      "speaker": null,
+      "quote": "they have to actually test this to know for themselves"
+    },
+    {
+      "id": "ev-e19",
+      "sourceId": "transcript",
+      "timestamp": "00:19:02",
+      "segmentId": null,
+      "line": 791,
+      "speaker": null,
+      "quote": "new clients could mean high-quality, low-quality clients."
+    },
+    {
+      "id": "ev-e20",
+      "sourceId": "transcript",
+      "timestamp": "00:13:03",
+      "segmentId": null,
+      "line": 572,
+      "speaker": null,
+      "quote": "We're at pricing"
+    },
+    {
+      "id": "ev-e21",
+      "sourceId": "transcript",
+      "timestamp": "00:37:40",
+      "segmentId": null,
+      "line": 1640,
+      "speaker": null,
+      "quote": "you shouldn't have to, um, put your current operation at risk to have the option of growing."
+    },
+    {
+      "id": "ev-e22",
+      "sourceId": "transcript",
+      "timestamp": "00:38:12",
+      "segmentId": null,
+      "line": 1676,
+      "speaker": null,
+      "quote": "staff that we've made all these promises to"
+    },
+    {
+      "id": "ev-e23",
+      "sourceId": "transcript",
+      "timestamp": "00:38:37",
+      "segmentId": null,
+      "line": 1703,
+      "speaker": null,
+      "quote": "you should be able to grow without it meaning that your system has to break."
+    },
+    {
+      "id": "ev-e24",
+      "sourceId": "transcript",
+      "timestamp": "00:39:32",
+      "segmentId": null,
+      "line": 1754,
+      "speaker": null,
+      "quote": "That's just as relevant on the B2C."
+    },
+    {
+      "id": "ev-e25",
+      "sourceId": "transcript",
+      "timestamp": "00:27:08",
+      "segmentId": null,
+      "line": 1142,
+      "speaker": null,
+      "quote": "Here's how to build your own workforce"
+    },
+    {
+      "id": "ev-e26",
+      "sourceId": "transcript",
+      "timestamp": "00:26:49",
+      "segmentId": null,
+      "line": 1133,
+      "speaker": null,
+      "quote": "So offloading up to 30% of your day job."
+    },
+    {
+      "id": "ev-e27",
+      "sourceId": "transcript",
+      "timestamp": "00:26:44",
+      "segmentId": null,
+      "line": 1130,
+      "speaker": null,
+      "quote": "running agents on your behalf to facilitate the workforce function."
+    },
+    {
+      "id": "ev-e28",
+      "sourceId": "transcript",
+      "timestamp": "00:27:42",
+      "segmentId": null,
+      "line": 1163,
+      "speaker": null,
+      "quote": "another magnum opus type of thing that is, from an experience standpoint, hard to digest."
+    },
+    {
+      "id": "ev-e29",
+      "sourceId": "transcript",
+      "timestamp": "00:30:17",
+      "segmentId": null,
+      "line": 1277,
+      "speaker": null,
+      "quote": "what's every piece of, of content that's here?"
+    },
+    {
+      "id": "ev-e30",
+      "sourceId": "transcript",
+      "timestamp": "00:30:36",
+      "segmentId": null,
+      "line": 1286,
+      "speaker": null,
+      "quote": "to solve what problems and at what level"
+    },
+    {
+      "id": "ev-e31",
+      "sourceId": "transcript",
+      "timestamp": "00:39:13",
+      "segmentId": null,
+      "line": 1739,
+      "speaker": null,
+      "quote": "if you can get that initial mapping of the content"
+    },
+    {
+      "id": "ev-e32",
+      "sourceId": "transcript",
+      "timestamp": "00:32:10",
+      "segmentId": null,
+      "line": 1379,
+      "speaker": null,
+      "quote": "these domains have these kinds of supports"
+    },
+    {
+      "id": "ev-e33",
+      "sourceId": "transcript",
+      "timestamp": "00:32:15",
+      "segmentId": null,
+      "line": 1385,
+      "speaker": null,
+      "quote": "There's a before and after."
+    },
+    {
+      "id": "ev-e34",
+      "sourceId": "transcript",
+      "timestamp": "00:32:28",
+      "segmentId": null,
+      "line": 1394,
+      "speaker": null,
+      "quote": "the problem that you're naming, that you're trying to solve for, which is, like, digestibility"
+    },
+    {
+      "id": "ev-e35",
+      "sourceId": "transcript",
+      "timestamp": "00:33:06",
+      "segmentId": null,
+      "line": 1436,
+      "speaker": null,
+      "quote": "what's the business case for that decision?"
+    },
+    {
+      "id": "ev-e36",
+      "sourceId": "transcript",
+      "timestamp": "00:34:52",
+      "segmentId": null,
+      "line": 1496,
+      "speaker": null,
+      "quote": "understand the customer experience and customer journey around the coaching brand."
+    },
+    {
+      "id": "ev-e37",
+      "sourceId": "transcript",
+      "timestamp": "00:22:12",
+      "segmentId": null,
+      "line": 965,
+      "speaker": null,
+      "quote": "can make for a really great consulting experience if it's done well."
+    },
+    {
+      "id": "ev-e38",
+      "sourceId": "transcript",
+      "timestamp": "00:23:15",
+      "segmentId": null,
+      "line": 1004,
+      "speaker": null,
+      "quote": "build out a coaching experience that has"
+    },
+    {
+      "id": "ev-e39",
+      "sourceId": "transcript",
+      "timestamp": "00:21:05",
+      "segmentId": null,
+      "line": 905,
+      "speaker": null,
+      "quote": "a system map kind of interactive pathway"
+    },
+    {
+      "id": "ev-e40",
+      "sourceId": "transcript",
+      "timestamp": "00:21:05",
+      "segmentId": null,
+      "line": 905,
+      "speaker": null,
+      "quote": "a multi-page, you know, tabs repository"
+    },
+    {
+      "id": "ev-e41",
+      "sourceId": "transcript",
+      "timestamp": "00:24:40",
+      "segmentId": null,
+      "line": 1055,
+      "speaker": null,
+      "quote": "if we did the unblocking at the level of the playbook itself"
+    },
+    {
+      "id": "ev-e42",
+      "sourceId": "transcript",
+      "timestamp": "00:23:32",
+      "segmentId": null,
+      "line": 1022,
+      "speaker": null,
+      "quote": "your sales playbook that we just went through for the tax piece."
+    },
+    {
+      "id": "ev-e43",
+      "sourceId": "transcript",
+      "timestamp": "00:24:08",
+      "segmentId": null,
+      "line": 1043,
+      "speaker": null,
+      "quote": "into something that itself can be a product"
+    },
+    {
+      "id": "ev-e44",
+      "sourceId": "transcript",
+      "timestamp": "00:36:15",
+      "segmentId": null,
+      "line": 1568,
+      "speaker": null,
+      "quote": "less scary to me to choose to invest in becoming who I want to become."
+    },
+    {
+      "id": "ev-e45",
+      "sourceId": "transcript",
+      "timestamp": "00:39:53",
+      "segmentId": null,
+      "line": 1763,
+      "speaker": null,
+      "quote": "Here's the before and after of how they become that person."
+    },
+    {
+      "id": "ev-e46",
+      "sourceId": "transcript",
+      "timestamp": "00:39:30",
+      "segmentId": null,
+      "line": 1748,
+      "speaker": null,
+      "quote": "a journey of buy-in with you about the possibility"
+    },
+    {
+      "id": "ev-e47",
+      "sourceId": "transcript",
+      "timestamp": "00:35:36",
+      "segmentId": null,
+      "line": 1538,
+      "speaker": null,
+      "quote": "a flywheel of identity investment."
+    },
+    {
+      "id": "ev-e48",
+      "sourceId": "transcript",
+      "timestamp": "00:40:08",
+      "segmentId": null,
+      "line": 1775,
+      "speaker": null,
+      "quote": "build the ecosystem and set up the flywheel of culture and ecosystem around that brand belief."
+    },
+    {
+      "id": "ev-e49",
+      "sourceId": "transcript",
+      "timestamp": "00:40:15",
+      "segmentId": null,
+      "line": 1781,
+      "speaker": null,
+      "quote": "make the product offerings nourish that and, and leverage that."
+    },
+    {
+      "id": "ev-e50",
+      "sourceId": "transcript",
+      "timestamp": "00:34:08",
+      "segmentId": null,
+      "line": 1466,
+      "speaker": null,
+      "quote": "the experience of feeling and the relationship to that experience is missing from both."
+    },
+    {
+      "id": "ev-sku-1",
+      "sourceId": "worldmap-source",
+      "timestamp": null,
+      "segmentId": null,
+      "speaker": null,
+      "quote": "Charge only for a consultation that meets the agreed qualification and attendance rules."
+    },
+    {
+      "id": "ev-sku-2",
+      "sourceId": "worldmap-source",
+      "timestamp": null,
+      "segmentId": null,
+      "speaker": null,
+      "quote": "Deliver researched records that match the firm’s criteria for outreach by the firm’s own team."
+    },
+    {
+      "id": "ev-sku-3",
+      "sourceId": "worldmap-source",
+      "timestamp": null,
+      "segmentId": null,
+      "speaker": null,
+      "quote": "Provide a proposed weekly Monday batch of newly matched filings."
+    },
+    {
+      "id": "ev-sku-4",
+      "sourceId": "worldmap-source",
+      "timestamp": null,
+      "segmentId": null,
+      "speaker": null,
+      "quote": "Identify where paid lead opportunities are lost between arrival, response, follow-up and handoff."
+    },
+    {
+      "id": "ev-sku-5",
+      "sourceId": "worldmap-source",
+      "timestamp": null,
+      "segmentId": null,
+      "speaker": null,
+      "quote": "Send the first approved response within five minutes for eligible inbound leads and place a case brief in the CRM."
+    },
+    {
+      "id": "ev-sku-6",
+      "sourceId": "worldmap-source",
+      "timestamp": null,
+      "segmentId": null,
+      "speaker": null,
+      "quote": "Reduce missed after-hours enquiries and rebook eligible no-shows."
+    },
+    {
+      "id": "ev-sku-7",
+      "sourceId": "worldmap-source",
+      "timestamp": null,
+      "segmentId": null,
+      "speaker": null,
+      "quote": "Test whether compliant reactivation can recover value from eligible past leads."
+    },
+    {
+      "id": "ev-sku-8",
+      "sourceId": "worldmap-source",
+      "timestamp": null,
+      "segmentId": null,
+      "speaker": null,
+      "quote": "Operate a private filing-research environment for one firm."
+    },
+    {
+      "id": "ev-sku-9",
+      "sourceId": "worldmap-source",
+      "timestamp": null,
+      "segmentId": null,
+      "speaker": null,
+      "quote": "Help an intake team build and test one scoped AI workflow during a practical working session."
+    },
+    {
+      "id": "ev-sku-10",
+      "sourceId": "worldmap-source",
+      "timestamp": null,
+      "segmentId": null,
+      "speaker": null,
+      "quote": "Extend the filing-signal model beyond federal tax lien notices for existing tax-resolution firms."
+    },
+    {
+      "id": "ev-sku-11",
+      "sourceId": "worldmap-source",
+      "timestamp": null,
+      "segmentId": null,
+      "speaker": null,
+      "quote": "Turn an approved client conversation into a clear, evidence-linked, editable consulting presentation and action roadmap."
+    },
+    {
+      "id": "ev-sku-12",
+      "sourceId": "worldmap-source",
+      "timestamp": null,
+      "segmentId": null,
+      "speaker": null,
+      "quote": "Keep client context, decisions, approved next actions and recurring briefs in one configured, supported working environment."
+    },
+    {
+      "id": "ev-sku-13",
+      "sourceId": "worldmap-source",
+      "timestamp": null,
+      "segmentId": null,
+      "speaker": null,
+      "quote": "Build and test one scoped automation for the learner’s own work across three sessions."
+    },
+    {
+      "id": "ev-sku-14",
+      "sourceId": "worldmap-source",
+      "timestamp": null,
+      "segmentId": null,
+      "speaker": null,
+      "quote": "Help participants build and test a practical workflow prototype over four weeks."
+    },
+    {
+      "id": "ev-sku-15",
+      "sourceId": "worldmap-source",
+      "timestamp": null,
+      "segmentId": null,
+      "speaker": null,
+      "quote": "Test a recurring learning environment built around practical workflow demonstrations and peer progress."
+    }
+  ],
+  "tour": [
+    {
+      "claim": "Two tracks share a customer-experience gap",
+      "edgeIds": [
+        "e50",
+        "e36"
+      ],
+      "evidenceIds": [
+        "ev-e50",
+        "ev-e36",
+        "ev-e2",
+        "ev-e28"
+      ],
+      "question": "Should Plinko be an umbrella for both tracks, or two distinct propositions?"
+    },
+    {
+      "claim": "Mechanical fit alone does not settle the decision",
+      "edgeIds": [
+        "e6",
+        "e7",
+        "e17"
+      ],
+      "evidenceIds": [
+        "ev-e6",
+        "ev-e7",
+        "ev-e17",
+        "ev-e10"
+      ],
+      "question": "What reveals risk, aspirations and partner trust before price?"
+    },
+    {
+      "claim": "A smaller AI-workforce promise needs a visible before-and-after",
+      "edgeIds": [
+        "e25",
+        "e26",
+        "e32"
+      ],
+      "evidenceIds": [
+        "ev-e25",
+        "ev-e26",
+        "ev-e32",
+        "ev-e30"
+      ],
+      "question": "Which work can be offloaded, for whom, and how will savings and quality be measured?"
+    },
+    {
+      "claim": "The map could support consulting delivery",
+      "edgeIds": [
+        "e39",
+        "e37",
+        "e38"
+      ],
+      "evidenceIds": [
+        "ev-e39",
+        "ev-e37",
+        "ev-e38",
+        "ev-e41"
+      ],
+      "question": "Which artifact and playbook components have repeatable value between sessions?"
+    },
+    {
+      "claim": "Belief and identity can frame a meaningful future",
+      "edgeIds": [
+        "e21",
+        "e23",
+        "e45"
+      ],
+      "evidenceIds": [
+        "ev-e21",
+        "ev-e23",
+        "ev-e45",
+        "ev-e47"
+      ],
+      "question": "What credible capability supports the promise without risking current commitments?"
+    }
+  ],
+  "worldmapOverlay": {
+    "source": "https://worldmap.plinkosolutions.com/#growth-map",
+    "dataSource": "https://worldmap.plinkosolutions.com/growth-map.js",
+    "retrievedAt": "2026-10-08T18:30:00Z",
+    "status": "User public roadmap; offers and estimates are proposals, not transcript statements or proven results",
+    "skus": [
+      {
+        "id": 1,
+        "name": "Attended Consultations",
+        "status": "Testing",
+        "quadrant": "Market Penetration",
+        "served": "Firm Owner",
+        "operators": "Engine + Caller + Jon",
+        "outcome": "Charge only for a consultation that meets the agreed qualification and attendance rules.",
+        "includes": [
+          "Filing research",
+          "Eligible U.S. enrolled-agent / CPA firm criteria",
+          "Approved human outreach",
+          "Qualification against agreed criteria",
+          "Consultation booking",
+          "Case-context summary",
+          "Attendance record",
+          "Billing evidence"
+        ],
+        "priceHypothesis": "$350–$450 per attended consultation, with a monthly minimum (est.).",
+        "capacityEstimate": "6 setup hours and 4 hours per month per firm (est.). Planning cap: 2 firms.",
+        "delivery": "The Engine researches and matches records. A human Caller conducts approved outreach. Jon reviews quality, attendance evidence, exceptions and billing.",
+        "validationGate": "Confirm the buyer is an eligible enrolled-agent or CPA firm before outreach; define qualified consultation, attendance, cancellation window, duplicate handling, replacement policy, billing evidence and dispute rules before each pilot.",
+        "evidenceLabels": [
+          "Active Test",
+          "Internal Proof"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Researched Leads",
+        "status": "Testing",
+        "quadrant": "Market Penetration",
+        "served": "Firm Owner",
+        "operators": "Engine + Jon",
+        "outcome": "Deliver researched records that match the firm’s criteria for outreach by the firm’s own team.",
+        "includes": [
+          "Filing research",
+          "Criteria matching",
+          "Pipeline deduplication",
+          "Review queue",
+          "Agreed data fields"
+        ],
+        "priceHypothesis": "Per-record price defined in each proposal.",
+        "capacityEstimate": "3 setup hours and 3 hours per month per firm (est.). Planning cap: 4 firms.",
+        "delivery": "The Engine researches, matches and deduplicates records. Jon clears exceptions from the review queue.",
+        "validationGate": "Define record freshness, required fields, exclusivity, duplicate rules, replacement rules and permitted source use.",
+        "evidenceLabels": [
+          "Active Test"
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Signal Feed",
+        "status": "Next",
+        "quadrant": "Product Development",
+        "served": "Firm Owner",
+        "operators": "Engine + Jon",
+        "outcome": "Provide a proposed weekly Monday batch of newly matched filings.",
+        "includes": [
+          "Weekly batch",
+          "Available contact details",
+          "Pipeline deduplication",
+          "Monthly activity report"
+        ],
+        "priceHypothesis": "$500–$1,000 per month (est.).",
+        "capacityEstimate": "4 setup hours and 4 hours per month per firm (est.). Planning cap: 5 firms.",
+        "delivery": "The Engine prepares the feed. Jon reviews exceptions and reports activity.",
+        "validationGate": "Test source reliability, match accuracy, usable-record rate, buyer usage and renewal intent.",
+        "evidenceLabels": [
+          "External Signal",
+          "Untested Assumption"
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Lead Leak Audit",
+        "status": "Next",
+        "quadrant": "Product Development",
+        "served": "Firm Owner",
+        "operators": "Jon",
+        "outcome": "Identify where paid lead opportunities are lost between arrival, response, follow-up and handoff.",
+        "includes": [
+          "Written review of lead sources",
+          "Response-time review",
+          "Follow-up review",
+          "Handoff review",
+          "Prioritized correction list"
+        ],
+        "priceHypothesis": "$500–$750 one time, credited toward SKU 5 if purchased within the stated proposal period (est.).",
+        "capacityEstimate": "4 hours per audit (est.). Planning cap: 2 audits per month.",
+        "delivery": "Written asynchronous review using a questionnaire and an approved CRM export.",
+        "validationGate": "Define minimum CRM fields, analysis period, data-handling process and the outcome when the export is incomplete.",
+        "evidenceLabels": [
+          "External Signal",
+          "Untested Assumption"
+        ]
+      },
+      {
+        "id": 5,
+        "name": "Five-Minute Response",
+        "status": "Next",
+        "quadrant": "Product Development",
+        "served": "Firm Owner",
+        "operators": "Jon + Automation",
+        "outcome": "Send the first approved response within five minutes for eligible inbound leads and place a case brief in the CRM.",
+        "includes": [
+          "Approved instant response",
+          "Routing to an assigned representative",
+          "Follow-up sequence",
+          "CRM handoff",
+          "Case brief",
+          "Monthly activity report"
+        ],
+        "priceHypothesis": "$1,800–$3,200 setup plus $300–$500 per month (est.).",
+        "capacityEstimate": "10 setup hours and 1 hour per month per firm (est.).",
+        "delivery": "Jon builds and tests the workflow. Automation runs the approved process.",
+        "validationGate": "Define eligible leads, supported channels, operating hours, consent assumptions, integration scope, outage handling and response-time measurement.",
+        "evidenceLabels": [
+          "External Signal",
+          "Untested Assumption"
+        ]
+      },
+      {
+        "id": 6,
+        "name": "After-Hours Intake",
+        "status": "Next",
+        "quadrant": "Product Development",
+        "served": "Firm Owner",
+        "operators": "Jon + Automation",
+        "outcome": "Reduce missed after-hours enquiries and rebook eligible no-shows.",
+        "includes": [
+          "After-hours response for eligible inbound enquiries (no filing-derived phone outreach limit is implied)",
+          "Qualification prompts",
+          "Booking",
+          "Reminders",
+          "No-show rebooking",
+          "CRM writeback"
+        ],
+        "priceHypothesis": "$400–$700 per month (est.).",
+        "capacityEstimate": "8 setup hours and 2 hours per month per firm (est.).",
+        "delivery": "Jon builds and tests the workflow. Automation runs the approved process.",
+        "validationGate": "Define supported channels, consent evidence, escalation rules, usage costs, booking rules and human handoff.",
+        "evidenceLabels": [
+          "External Signal",
+          "Untested Assumption"
+        ]
+      },
+      {
+        "id": 7,
+        "name": "Dead-Lead Reactivation",
+        "status": "Next",
+        "quadrant": "Product Development",
+        "served": "Firm Owner",
+        "operators": "Jon + Automation",
+        "outcome": "Test whether compliant reactivation can recover value from eligible past leads.",
+        "includes": [
+          "Approved text and email sequences",
+          "Eligibility and suppression checks",
+          "Booking",
+          "Opt-out handling",
+          "Monthly activity report"
+        ],
+        "priceHypothesis": "$1,000 setup plus $500 per month (est.).",
+        "capacityEstimate": "6 setup hours and 2 hours per month per firm (est.).",
+        "delivery": "Jon builds and tests the workflow. Automation runs it only for records approved for the relevant channel.",
+        "validationGate": "Require documented channel eligibility or consent, suppression handling, opt-out propagation, retention rules and legal review before launch.",
+        "evidenceLabels": [
+          "External Signal",
+          "Untested Assumption"
+        ]
+      },
+      {
+        "id": 8,
+        "name": "Managed Signal Engine",
+        "status": "Later",
+        "quadrant": "Product Development",
+        "served": "Firm Owner",
+        "operators": "Engine + Jon",
+        "outcome": "Operate a private filing-research environment for one firm.",
+        "includes": [
+          "Dedicated environment",
+          "Source monitoring",
+          "Matching rules",
+          "Review queue",
+          "Monthly activity report"
+        ],
+        "priceHypothesis": "$1,500–$3,000 per month, finalized by proposal and scope (est.).",
+        "capacityEstimate": "20 setup hours and 6 hours per month (est.). Planning cap: 1 firm.",
+        "delivery": "The Engine performs scheduled work. Jon monitors exceptions, quality and reporting.",
+        "validationGate": "Define hosting, access control, retention, deletion, backup, security, monitoring, incident response and support boundaries.",
+        "evidenceLabels": [
+          "Untested Assumption"
+        ]
+      },
+      {
+        "id": 9,
+        "name": "Intake Team AI Workshop",
+        "status": "Next",
+        "quadrant": "Product Development",
+        "served": "Firm Owner",
+        "operators": "Jon",
+        "outcome": "Help an intake team build and test one scoped AI workflow during a practical working session.",
+        "includes": [
+          "One evening session",
+          "Worked intake examples",
+          "Teaching content is original, synthetic, public-domain or used with written permission",
+          "Guided workflow build",
+          "Recording where permitted",
+          "Action notes"
+        ],
+        "priceHypothesis": "$1,000–$3,000 per session (est.).",
+        "capacityEstimate": "6 hours per session including preparation (est.). Planning cap: 1 session per month.",
+        "delivery": "Jon prepares and delivers the session.",
+        "validationGate": "Test willingness to pay, implementation rate, recording permission, preparation time and follow-up support burden.",
+        "evidenceLabels": [
+          "External Signal",
+          "Untested Assumption"
+        ]
+      },
+      {
+        "id": 10,
+        "name": "State Lien and Judgment Feed",
+        "status": "Later",
+        "quadrant": "Product Development",
+        "served": "Firm Owner",
+        "operators": "Engine + Jon",
+        "outcome": "Extend the filing-signal model beyond federal tax lien notices for existing tax-resolution firms.",
+        "includes": [
+          "Approved state or local filing sources",
+          "Criteria matching",
+          "Pipeline deduplication",
+          "Proposed weekly feed",
+          "Monthly activity report"
+        ],
+        "priceHypothesis": "$500–$1,000 per month (est.).",
+        "capacityEstimate": "12 hours per approved filing source, followed by 4 hours per month per firm (est.).",
+        "delivery": "The Engine retrieves and matches records from approved sources. Jon extends the workflow and reviews exceptions.",
+        "validationGate": "Validate access method, terms, commercial reuse, coverage, update cadence, data quality and economics separately for every filing source.",
+        "evidenceLabels": [
+          "External Signal",
+          "Untested Assumption"
+        ],
+        "classification": "Product Development while sold to existing tax-resolution market; reclassify a new-buyer version as Diversification."
+      },
+      {
+        "id": 11,
+        "name": "Plinko Pocket Sensemaker",
+        "status": "Next",
+        "quadrant": "Diversification",
+        "served": "Consultant / Fractional Executive / Agency Strategist / Workshop Facilitator",
+        "operators": "Jon + Hermes-powered Pocket",
+        "outcome": "Turn an approved client conversation into a clear, evidence-linked, editable consulting presentation and action roadmap.",
+        "includes": [
+          "Transcript intake and evidence extraction",
+          "Themes, tensions and assumptions",
+          "Actor, dependency and bottleneck map",
+          "Executive narrative: situation → problem → options → recommendation → roadmap",
+          "Branded editable presentation, speaker notes and source appendix",
+          "Consultant review before external sharing"
+        ],
+        "priceHypothesis": "$250–$500 per reviewed presentation package (est. pilot price hypothesis).",
+        "capacityEstimate": "Production and revision hours to be measured per package (est.; not yet set).",
+        "delivery": "Pocket workspace with Hermes-powered processing, review checkpoints and editable exports. MVP accepts pasted or uploaded transcripts; live voice, autonomous research and complex meeting integrations are out of scope.",
+        "validationGate": "Run two unrelated paid pilots; measure preparation and editing time, traceability of claims, confidentiality handling, revision load and repeat purchase. Separate direct quotes, consultant interpretations and untested hypotheses.",
+        "evidenceLabels": [
+          "Untested Assumption"
+        ]
+      },
+      {
+        "id": 12,
+        "name": "Plinko Pocket Operator OS",
+        "status": "Next",
+        "quadrant": "Diversification",
+        "served": "Solo Consultant / Small Agency Owner / Owner-Operator",
+        "operators": "Jon + Customer-owned Hermes environment + Pocket",
+        "outcome": "Keep client context, decisions, approved next actions and recurring briefs in one configured, supported working environment.",
+        "includes": [
+          "Pocket onboarding and client-context setup",
+          "Two configured workflow stations: Client Context & Sensemaking; Delivery & Follow-Through",
+          "Reusable skills and documented approval boundaries",
+          "Scheduled briefs and operating guide",
+          "Monthly maintenance with bounded scope",
+          "Customer pays model, tool and hosting charges directly or by separate metering"
+        ],
+        "priceHypothesis": "$1,500–$3,000 setup plus $250–$500/month bounded maintenance (est. pilot price hypothesis).",
+        "capacityEstimate": "Setup and monthly support hours to be measured per deployment (est.; not yet set).",
+        "delivery": "Customer-owned Hermes environment connected to Pocket; scoped Plinko implementation and ongoing support. Not a generic Hermes wrapper or standalone hosting offer.",
+        "validationGate": "Complete two paid deployments; measure repeatability of installation, isolation, weekly use, reliability and support burden. Keep model, tool and hosting usage separate from Plinko fees.",
+        "evidenceLabels": [
+          "Untested Assumption"
+        ]
+      },
+      {
+        "id": 13,
+        "name": "First AI Workflow",
+        "status": "Next",
+        "quadrant": "Diversification",
+        "served": "Learner",
+        "operators": "Jon",
+        "outcome": "Build and test one scoped automation for the learner’s own work across three sessions.",
+        "includes": [
+          "Three one-to-one evening sessions",
+          "Workflow scoping",
+          "Guided implementation",
+          "Asynchronous build review"
+        ],
+        "priceHypothesis": "$600–$800 per package (est.).",
+        "capacityEstimate": "4 hours per learner (est.). Planning cap: 2 learners per month.",
+        "delivery": "Jon teaches and reviews the build.",
+        "validationGate": "Test learner completion, time to first working prototype, support burden, willingness to pay and referral intent.",
+        "evidenceLabels": [
+          "Untested Assumption"
+        ]
+      },
+      {
+        "id": 14,
+        "name": "Evening Cohort",
+        "status": "Later",
+        "quadrant": "Diversification",
+        "served": "Learner",
+        "operators": "Jon",
+        "outcome": "Help participants build and test a practical workflow prototype over four weeks.",
+        "includes": [
+          "Four live evening sessions",
+          "Templates",
+          "Group feedback",
+          "Build demonstrations",
+          "Completion review"
+        ],
+        "priceHypothesis": "$599–$799 per seat (est.).",
+        "capacityEstimate": "20 hours to build the initial program and 8 hours per run (est.). Planning cap: 1 run per quarter.",
+        "delivery": "Jon develops and delivers the cohort.",
+        "validationGate": "Validate audience acquisition, minimum cohort size, completion rate, support burden and conversion from SKU 13 or the free community.",
+        "evidenceLabels": [
+          "Untested Assumption"
+        ]
+      },
+      {
+        "id": 15,
+        "name": "Builders Community",
+        "status": "Later",
+        "quadrant": "Diversification",
+        "served": "Learner",
+        "operators": "Jon",
+        "outcome": "Test a recurring learning environment built around practical workflow demonstrations and peer progress.",
+        "includes": [
+          "Weekly recorded builds",
+          "Reusable templates",
+          "One evening question-and-answer session each month",
+          "Open community remains free."
+        ],
+        "priceHypothesis": "$39 per month for the proposed paid level (est.).",
+        "capacityEstimate": "8 hours per month regardless of member count (est.).",
+        "delivery": "Jon prepares the recordings, templates and monthly live session.",
+        "validationGate": "Validate recurring engagement, churn, content-production time, and that teaching/community material is original, synthetic, public-domain or used with written permission; permission controls and willingness to pay before launch.",
+        "evidenceLabels": [
+          "Untested Assumption"
+        ]
+      }
+    ]
+  }
+}
