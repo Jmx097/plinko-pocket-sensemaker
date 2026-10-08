@@ -1,0 +1,1439 @@
+{
+  "elements": [
+    {
+      "id": "ppsref20261008-guide",
+      "label": "Read this reference map",
+      "type": "Reference",
+      "description": "Public-safe project reference, dated 8 October 2026. This is an ordinary Kumu data import, not a project backup. Architecture and milestones describe proposed or planned work unless their Status explicitly says otherwise. Implementation is in progress. The storage/API foundation has passed 13 automated tests; UI and end-to-end acceptance remain incomplete. Approved REA setup is installed and its standalone server has been verified, while active-session tool reload remains pending.\n\nUse Overview for the architecture, Roadmap for prerequisite arrows, and Review for gates, decisions and blockers. An arrow labeled \"prerequisite for\" points from the prerequisite to the dependent milestone. Other arrows describe their own relationship. Details and acceptance criteria are in each element profile.\n\nFields separate work Status from Evidence level. A verified baseline is confined to the pinned audit commit; a documented or observed Kumu capability does not establish Sensemaker implementation. The map is a snapshot, not a live status feed. No original private transcript quotations are included.\n\nSafe first import: export a JSON backup of the existing project, then create a new empty map named Sensemaker reference 2026-10-08. Choose the Stakeholder template for automatic positioning. Disable clustering and use the ordinary JSON file import. Expect 42 elements and 60 connections. Review pending changes; if existing items would be updated unexpectedly, cancel. Save only the intended new import. Do not use project-backup restore or delete existing content. IDs use the dedicated ppsref20261008- namespace, but existing-project collisions have not been checked. Reimporting the same IDs can overwrite fields across maps.\n\nTo create focused views, make a NEW view rather than editing an existing one, then use the corresponding Advanced Editor settings below. These settings are based on official documentation but have not been applied or tested in the real project. Color by Type in the Basic Editor if desired.\n\nOverview:\n```\n@settings {\n  include: element[\"tags\"*=\"Overview\"], connection[\"tags\"*=\"Overview\"];\n}\n```\n\nRoadmap:\n```\n@settings {\n  include: element[\"tags\"*=\"Roadmap\"], connection[\"tags\"*=\"Roadmap\"];\n}\n```\n\nReview:\n```\n@settings {\n  include: element[\"tags\"*=\"Review\"], connection[\"tags\"*=\"Review\"];\n}\n```\n\nReferences: [Kumu JSON imports](https://docs.kumu.io/guides/import/blueprints) · [Map templates](https://docs.kumu.io/getting-started/first-steps) · [Import ID rules](https://docs.kumu.io/frequently-asked-questions/how-do-i-avoid-duplicating-data) · [Views](https://docs.kumu.io/guides/views) · [Filters](https://docs.kumu.io/guides/filter)",
+      "tags": [
+        "Overview",
+        "Roadmap",
+        "Review"
+      ],
+      "Status": "Reference",
+      "Evidence level": "Documented format",
+      "Snapshot date": "2026-10-08",
+      "Status checked at": "2026-10-08 20:52 UTC",
+      "Reference set": "Plinko Pocket Sensemaker reference 2026-10-08",
+      "Source URLs": "https://docs.kumu.io/guides/import/blueprints\nhttps://docs.kumu.io/getting-started/first-steps\nhttps://docs.kumu.io/frequently-asked-questions/how-do-i-avoid-duplicating-data\nhttps://docs.kumu.io/guides/views\nhttps://docs.kumu.io/guides/filter"
+    },
+    {
+      "id": "ppsref20261008-goal",
+      "label": "Plinko Pocket Sensemaker",
+      "type": "Goal",
+      "description": "Build a provenance-preserving systems-mapping application: clear graph/evidence, durable edits and recovery, reusable maps and views, and a locally testable privacy boundary. Preserve the existing viewer and main while new work proceeds separately. Kumu informs interaction requirements; full Kumu parity, zero operating or labor cost, and privacy without enforcement are not promised.\n\nReferences: [Public application repository](https://github.com/Jmx097/plinko-pocket-sensemaker)",
+      "tags": [
+        "Overview",
+        "Roadmap",
+        "Review"
+      ],
+      "Status": "Target outcome",
+      "Evidence level": "Design proposal",
+      "Snapshot date": "2026-10-08",
+      "Status checked at": "2026-10-08 20:52 UTC",
+      "Reference set": "Plinko Pocket Sensemaker reference 2026-10-08",
+      "Source URLs": "https://github.com/Jmx097/plinko-pocket-sensemaker"
+    },
+    {
+      "id": "ppsref20261008-baseline",
+      "label": "Audited v1 baseline",
+      "type": "Baseline",
+      "description": "At audit commit 19a3d38649fd53cebe1bb8296ebae8df8a2079f0: six application files, 44 nodes, 52 edges, 65 evidence records, two sources and five tour stops. Embedded graph and graph.json are equal after parsing. IDs and graph references passed checks. Storage is in memory; JSON export contains graph data, not durable maps/views/pins. These are pinned-baseline facts, not a claim about later implementation.\n\nIsolated access to missing embedded.validation.segmentIds threw TypeError. Full app startup remains untested. Source also predicts stale 3D updates from captured render handlers; that prediction needs a browser test.\n\nReferences: [v1 data](https://github.com/Jmx097/plinko-pocket-sensemaker/blob/19a3d38649fd53cebe1bb8296ebae8df8a2079f0/graph.json) · [v1 schema](https://github.com/Jmx097/plinko-pocket-sensemaker/blob/19a3d38649fd53cebe1bb8296ebae8df8a2079f0/graph.schema.json) · [Viewer source](https://github.com/Jmx097/plinko-pocket-sensemaker/blob/19a3d38649fd53cebe1bb8296ebae8df8a2079f0/index.html) · [Spatial source](https://github.com/Jmx097/plinko-pocket-sensemaker/blob/19a3d38649fd53cebe1bb8296ebae8df8a2079f0/spatial.js)",
+      "tags": [
+        "Overview",
+        "Review"
+      ],
+      "Status": "Verified baseline",
+      "Evidence level": "Source and fixture checks",
+      "Snapshot date": "2026-10-08",
+      "Status checked at": "2026-10-08 20:52 UTC",
+      "Reference set": "Plinko Pocket Sensemaker reference 2026-10-08",
+      "Source URLs": "https://github.com/Jmx097/plinko-pocket-sensemaker/blob/19a3d38649fd53cebe1bb8296ebae8df8a2079f0/graph.json\nhttps://github.com/Jmx097/plinko-pocket-sensemaker/blob/19a3d38649fd53cebe1bb8296ebae8df8a2079f0/graph.schema.json\nhttps://github.com/Jmx097/plinko-pocket-sensemaker/blob/19a3d38649fd53cebe1bb8296ebae8df8a2079f0/index.html\nhttps://github.com/Jmx097/plinko-pocket-sensemaker/blob/19a3d38649fd53cebe1bb8296ebae8df8a2079f0/spatial.js"
+    },
+    {
+      "id": "ppsref20261008-graph",
+      "label": "Graph and evidence core",
+      "type": "Component",
+      "description": "Own stable node/edge IDs, relationship direction, source identity, evidence, epistemic status and tours. Preserve parallel edges, unknown legacy fields and originalStatus. Explicit means directly stated in a source, not independently true. Review acceptance must not convert a proposal into a fact. Graph meaning stays independent of coordinates and visual styles.\n\nReferences: [Current contract](https://github.com/Jmx097/plinko-pocket-sensemaker/blob/19a3d38649fd53cebe1bb8296ebae8df8a2079f0/graph.schema.json)",
+      "tags": [
+        "Overview"
+      ],
+      "Status": "Proposed architecture",
+      "Evidence level": "Design proposal",
+      "Snapshot date": "2026-10-08",
+      "Status checked at": "2026-10-08 20:52 UTC",
+      "Reference set": "Plinko Pocket Sensemaker reference 2026-10-08",
+      "Source URLs": "https://github.com/Jmx097/plinko-pocket-sensemaker/blob/19a3d38649fd53cebe1bb8296ebae8df8a2079f0/graph.schema.json"
+    },
+    {
+      "id": "ppsref20261008-adapter",
+      "label": "v1 ↔ v2 compatibility adapter",
+      "type": "Component",
+      "description": "Initial compatibility behavior is implemented in the separate work: byte-identical v1 round trips plus provenance/unknown-field preservation passed automated checks. The broader A1 gate remains incomplete. Target contract: a separate v2 envelope and dedicated v1 adapter. Keep original v1 bytes and digest for exact restoration; preserve every semantic value in a no-op round trip, including nulls, quotations, overlay/SKU fields, ordered tours and unknown extensions. A v1 projection must report excluded v2 content and fail when faithful export is impossible. Never silently truncate or invent five tour stops.\n\nReferences: [v1 schema](https://github.com/Jmx097/plinko-pocket-sensemaker/blob/19a3d38649fd53cebe1bb8296ebae8df8a2079f0/graph.schema.json) · [Ingestion contract](https://github.com/Jmx097/plinko-pocket-sensemaker/blob/19a3d38649fd53cebe1bb8296ebae8df8a2079f0/ingestion.md)",
+      "tags": [
+        "Overview"
+      ],
+      "Status": "Initial automated checks passed",
+      "Evidence level": "Automated checks and design target",
+      "Snapshot date": "2026-10-08",
+      "Status checked at": "2026-10-08 20:52 UTC",
+      "Reference set": "Plinko Pocket Sensemaker reference 2026-10-08",
+      "Source URLs": "https://github.com/Jmx097/plinko-pocket-sensemaker/blob/19a3d38649fd53cebe1bb8296ebae8df8a2079f0/graph.schema.json\nhttps://github.com/Jmx097/plinko-pocket-sensemaker/blob/19a3d38649fd53cebe1bb8296ebae8df8a2079f0/ingestion.md"
+    },
+    {
+      "id": "ppsref20261008-validation",
+      "label": "Four independent validation gates",
+      "type": "Component",
+      "description": "Validate (1) shape and resource limits, (2) uniqueness/references/map membership/revisions, (3) source identity and quote/locator exactness against retained authorized bytes, and (4) human semantic support. Passing structure must not label evidence verified. Stage parse, checks and derived-state preflight before one committed import.\n\nReferences: [Current schema](https://github.com/Jmx097/plinko-pocket-sensemaker/blob/19a3d38649fd53cebe1bb8296ebae8df8a2079f0/graph.schema.json) · [Current validation and load](https://github.com/Jmx097/plinko-pocket-sensemaker/blob/19a3d38649fd53cebe1bb8296ebae8df8a2079f0/index.html)",
+      "tags": [
+        "Overview"
+      ],
+      "Status": "Proposed architecture",
+      "Evidence level": "Design proposal",
+      "Snapshot date": "2026-10-08",
+      "Status checked at": "2026-10-08 20:52 UTC",
+      "Reference set": "Plinko Pocket Sensemaker reference 2026-10-08",
+      "Source URLs": "https://github.com/Jmx097/plinko-pocket-sensemaker/blob/19a3d38649fd53cebe1bb8296ebae8df8a2079f0/graph.schema.json\nhttps://github.com/Jmx097/plinko-pocket-sensemaker/blob/19a3d38649fd53cebe1bb8296ebae8df8a2079f0/index.html"
+    },
+    {
+      "id": "ppsref20261008-storage",
+      "label": "SQLite and source-artifact storage",
+      "type": "Component",
+      "description": "The first storage/API foundation passed 13 automated tests, including conflicting saves, transaction rollback and backup restore after reopening SQLite. This is automated foundation evidence, not completed UI/end-to-end acceptance. Target architecture: a single-user local service with transactional SQLite records and content-addressed source artifacts; source-artifact implementation is not separately confirmed. Revisions prevent stale writes. Record representation identity and hash scope honestly. Browser storage can cache data but is not the only archive. Source retention and rights need an explicit policy.\n\nReferences: [Audited repository tree](https://github.com/Jmx097/plinko-pocket-sensemaker/tree/19a3d38649fd53cebe1bb8296ebae8df8a2079f0)",
+      "tags": [
+        "Overview"
+      ],
+      "Status": "Foundation implemented; UI gate open",
+      "Evidence level": "Automated checks and design target",
+      "Snapshot date": "2026-10-08",
+      "Status checked at": "2026-10-08 20:52 UTC",
+      "Reference set": "Plinko Pocket Sensemaker reference 2026-10-08",
+      "Source URLs": "https://github.com/Jmx097/plinko-pocket-sensemaker/tree/19a3d38649fd53cebe1bb8296ebae8df8a2079f0"
+    },
+    {
+      "id": "ppsref20261008-query",
+      "label": "Shared query and visibility layer",
+      "type": "Component",
+      "description": "One validated filter evaluator derives visible node/edge IDs for canvas, accessible list, counts, optional 3D and export preview. Define missing values, hidden endpoints, self-loops, parallel edges and neighborhood rules. Include clear/reset and an explanatory empty state. Hiding is not deletion or access control.\n\nReferences: [Current SVG behavior](https://github.com/Jmx097/plinko-pocket-sensemaker/blob/19a3d38649fd53cebe1bb8296ebae8df8a2079f0/index.html) · [Current 3D behavior](https://github.com/Jmx097/plinko-pocket-sensemaker/blob/19a3d38649fd53cebe1bb8296ebae8df8a2079f0/spatial.js)",
+      "tags": [
+        "Overview"
+      ],
+      "Status": "Proposed architecture",
+      "Evidence level": "Design proposal",
+      "Snapshot date": "2026-10-08",
+      "Status checked at": "2026-10-08 20:52 UTC",
+      "Reference set": "Plinko Pocket Sensemaker reference 2026-10-08",
+      "Source URLs": "https://github.com/Jmx097/plinko-pocket-sensemaker/blob/19a3d38649fd53cebe1bb8296ebae8df8a2079f0/index.html\nhttps://github.com/Jmx097/plinko-pocket-sensemaker/blob/19a3d38649fd53cebe1bb8296ebae8df8a2079f0/spatial.js"
+    },
+    {
+      "id": "ppsref20261008-editor",
+      "label": "Command-based graph editor",
+      "type": "Component",
+      "description": "Editor implementation is underway and is not yet verified complete. Target: create/edit nodes and edges through commands with stable identity, expected revisions, validation and explicit undo/recovery boundaries. Support duplicate labels, parallel edges and endpoint changes without losing edge metadata. Keep graph edits distinct from layout drags and view drafts.\n\nReferences: [Current viewer baseline](https://github.com/Jmx097/plinko-pocket-sensemaker/blob/19a3d38649fd53cebe1bb8296ebae8df8a2079f0/index.html)",
+      "tags": [
+        "Overview"
+      ],
+      "Status": "In progress",
+      "Evidence level": "Implementation update and design target",
+      "Snapshot date": "2026-10-08",
+      "Status checked at": "2026-10-08 20:52 UTC",
+      "Reference set": "Plinko Pocket Sensemaker reference 2026-10-08",
+      "Source URLs": "https://github.com/Jmx097/plinko-pocket-sensemaker/blob/19a3d38649fd53cebe1bb8296ebae8df8a2079f0/index.html"
+    },
+    {
+      "id": "ppsref20261008-renderer2d",
+      "label": "2D primary renderer and list",
+      "type": "Component",
+      "description": "Use a 2D editing foundation with keyboard selection, visible focus, readable labels and accessible table/list alternatives. Cytoscape.js is the proposed graph foundation, subject to final technical selection. Measure representative graph sizes and cancellation needs before promising performance. Keep renderer-specific state outside the canonical graph.\n\nReferences: [Cytoscape.js official documentation](https://js.cytoscape.org/) · [Existing SVG viewer](https://github.com/Jmx097/plinko-pocket-sensemaker/blob/19a3d38649fd53cebe1bb8296ebae8df8a2079f0/index.html)",
+      "tags": [
+        "Overview"
+      ],
+      "Status": "Proposed architecture",
+      "Evidence level": "Design proposal",
+      "Snapshot date": "2026-10-08",
+      "Status checked at": "2026-10-08 20:52 UTC",
+      "Reference set": "Plinko Pocket Sensemaker reference 2026-10-08",
+      "Source URLs": "https://js.cytoscape.org/\nhttps://github.com/Jmx097/plinko-pocket-sensemaker/blob/19a3d38649fd53cebe1bb8296ebae8df8a2079f0/index.html"
+    },
+    {
+      "id": "ppsref20261008-renderer3d",
+      "label": "Optional 3D reading adapter",
+      "type": "Component",
+      "description": "Retain the spatial reading/navigation experience as an optional adapter over the same derived graph. Test filter parity, selection, evidence inspection, context loss and 2D fallback. Do not infer analytics, causal simulation or durable layouts from library names. The existing 3D implementation is baseline code, not a completed v2 adapter.\n\nReferences: [Existing 3D source](https://github.com/Jmx097/plinko-pocket-sensemaker/blob/19a3d38649fd53cebe1bb8296ebae8df8a2079f0/spatial.js)",
+      "tags": [
+        "Overview"
+      ],
+      "Status": "Proposed architecture",
+      "Evidence level": "Design proposal",
+      "Snapshot date": "2026-10-08",
+      "Status checked at": "2026-10-08 20:52 UTC",
+      "Reference set": "Plinko Pocket Sensemaker reference 2026-10-08",
+      "Source URLs": "https://github.com/Jmx097/plinko-pocket-sensemaker/blob/19a3d38649fd53cebe1bb8296ebae8df8a2079f0/spatial.js"
+    },
+    {
+      "id": "ppsref20261008-maps",
+      "label": "Maps, layouts and persistent pins",
+      "type": "Component",
+      "description": "Maps own membership, groups and layout snapshots; the project owns graph entities. A node can have different positions in different maps. Removing membership must not delete the entity. Store finite coordinates, pinned state, layout parameters/seed and revision. Layout drafts need Save/Revert, and dragging must not alter evidence or topology.\n\nReferences: [Kumu map/data distinction](https://docs.kumu.io/overview/kumus-architecture)",
+      "tags": [
+        "Overview"
+      ],
+      "Status": "Proposed architecture",
+      "Evidence level": "Design proposal",
+      "Snapshot date": "2026-10-08",
+      "Status checked at": "2026-10-08 20:52 UTC",
+      "Reference set": "Plinko Pocket Sensemaker reference 2026-10-08",
+      "Source URLs": "https://docs.kumu.io/overview/kumus-architecture"
+    },
+    {
+      "id": "ppsref20261008-views",
+      "label": "Reusable saved views and styles",
+      "type": "Component",
+      "description": "Project-level presets contain typed filter/style/label/renderer rules and applicability metadata. Optional map bindings select compatible layouts and overrides. Keep draft and saved revisions distinct, with Save/Revert, independent duplication, deterministic rule order, missing-value handling and legends. Rules are declarative and allowlisted, not executable imports.\n\nReferences: [Kumu view model](https://docs.kumu.io/guides/views) · [Filter reference](https://docs.kumu.io/guides/filter)",
+      "tags": [
+        "Overview"
+      ],
+      "Status": "Proposed architecture",
+      "Evidence level": "Design proposal",
+      "Snapshot date": "2026-10-08",
+      "Status checked at": "2026-10-08 20:52 UTC",
+      "Reference set": "Plinko Pocket Sensemaker reference 2026-10-08",
+      "Source URLs": "https://docs.kumu.io/guides/views\nhttps://docs.kumu.io/guides/filter"
+    },
+    {
+      "id": "ppsref20261008-inspector",
+      "label": "Evidence and provenance inspector",
+      "type": "Component",
+      "description": "Show quoted support, source representation, locators, original status and separate verification/review states. Preserve unavailable/null segments and speakers. Surface mismatch, unavailable artifacts, competing claims and interpretation rationale. A digest establishes byte identity for a stated representation, not truth or authorship.\n\nReferences: [Current evidence records](https://github.com/Jmx097/plinko-pocket-sensemaker/blob/19a3d38649fd53cebe1bb8296ebae8df8a2079f0/graph.json) · [Ingestion requirements](https://github.com/Jmx097/plinko-pocket-sensemaker/blob/19a3d38649fd53cebe1bb8296ebae8df8a2079f0/ingestion.md)",
+      "tags": [
+        "Overview"
+      ],
+      "Status": "Proposed architecture",
+      "Evidence level": "Design proposal",
+      "Snapshot date": "2026-10-08",
+      "Status checked at": "2026-10-08 20:52 UTC",
+      "Reference set": "Plinko Pocket Sensemaker reference 2026-10-08",
+      "Source URLs": "https://github.com/Jmx097/plinko-pocket-sensemaker/blob/19a3d38649fd53cebe1bb8296ebae8df8a2079f0/graph.json\nhttps://github.com/Jmx097/plinko-pocket-sensemaker/blob/19a3d38649fd53cebe1bb8296ebae8df8a2079f0/ingestion.md"
+    },
+    {
+      "id": "ppsref20261008-backup",
+      "label": "Versioned backup and restore",
+      "type": "Component",
+      "description": "Backup restore after reopening SQLite passed within the 13-test foundation suite. Full UI, clean-release and artifact-retention acceptance remain open. Target: a lossless v2 project bundle with records, layout/view revisions and source references/artifacts as permitted. Demonstrate restore into a clean data directory. Keep original v1 bytes for exact restoration. Reviewed sharing/export is separate from backup; hidden, deleted or private content must not leak through exports. Visual exports remain derivatives.\n\nReferences: [Current export source](https://github.com/Jmx097/plinko-pocket-sensemaker/blob/19a3d38649fd53cebe1bb8296ebae8df8a2079f0/index.html) · [Kumu export reference](https://docs.kumu.io/guides/export)",
+      "tags": [
+        "Overview"
+      ],
+      "Status": "Initial automated checks passed",
+      "Evidence level": "Automated checks and design target",
+      "Snapshot date": "2026-10-08",
+      "Status checked at": "2026-10-08 20:52 UTC",
+      "Reference set": "Plinko Pocket Sensemaker reference 2026-10-08",
+      "Source URLs": "https://github.com/Jmx097/plinko-pocket-sensemaker/blob/19a3d38649fd53cebe1bb8296ebae8df8a2079f0/index.html\nhttps://docs.kumu.io/guides/export"
+    },
+    {
+      "id": "ppsref20261008-packaging",
+      "label": "Local/private release packaging",
+      "type": "Component",
+      "description": "Bundle required scripts, fonts and assets locally. Test with outbound networking denied; inspect network logs. Use restrictive policy, origin/path defenses and bounded imports. The first target is a single-user loopback service. Team/LAN/public service needs authenticated project authorization, TLS and retention controls before exposure. Self-hosted does not automatically mean private.\n\nReferences: [Current remote module dependencies](https://github.com/Jmx097/plinko-pocket-sensemaker/blob/19a3d38649fd53cebe1bb8296ebae8df8a2079f0/index.html)",
+      "tags": [
+        "Overview"
+      ],
+      "Status": "Proposed architecture",
+      "Evidence level": "Design proposal",
+      "Snapshot date": "2026-10-08",
+      "Status checked at": "2026-10-08 20:52 UTC",
+      "Reference set": "Plinko Pocket Sensemaker reference 2026-10-08",
+      "Source URLs": "https://github.com/Jmx097/plinko-pocket-sensemaker/blob/19a3d38649fd53cebe1bb8296ebae8df8a2079f0/index.html"
+    },
+    {
+      "id": "ppsref20261008-ingestion",
+      "label": "Bounded ingestion boundary",
+      "type": "Component",
+      "description": "Keep extraction separate from interactive mapping. Start with deterministic local imports; no mapping interaction should trigger model extraction. Any model-assisted processing must name provider, source scope, budget and consent boundary. Preserve original and derived representation identity separately. The existing ingestion file is a specification, not an implemented extractor.\n\nReferences: [Ingestion specification](https://github.com/Jmx097/plinko-pocket-sensemaker/blob/19a3d38649fd53cebe1bb8296ebae8df8a2079f0/ingestion.md)",
+      "tags": [
+        "Overview"
+      ],
+      "Status": "Proposed architecture",
+      "Evidence level": "Design proposal",
+      "Snapshot date": "2026-10-08",
+      "Status checked at": "2026-10-08 20:52 UTC",
+      "Reference set": "Plinko Pocket Sensemaker reference 2026-10-08",
+      "Source URLs": "https://github.com/Jmx097/plinko-pocket-sensemaker/blob/19a3d38649fd53cebe1bb8296ebae8df8a2079f0/ingestion.md"
+    },
+    {
+      "id": "ppsref20261008-kumu",
+      "label": "Kumu public viewer observations",
+      "type": "Baseline",
+      "description": "Public tests on 8 October 2026 observed independent map/view selection, element deep links, reversible filters with hidden counts and an empty state, plus styling/layout control affordances. These are viewer observations. Creating/editing data, saving layouts/views, conflicts and import/export were not exercised. They inform requirements without establishing implementation parity.\n\nReferences: [Observed public example](https://kumu.io/dan/a-network-of-thrones#geography) · [Map/view documentation](https://docs.kumu.io/overview/kumus-architecture)",
+      "tags": [
+        "Overview",
+        "Review"
+      ],
+      "Status": "Observed behavior",
+      "Evidence level": "Behavior observed",
+      "Snapshot date": "2026-10-08",
+      "Status checked at": "2026-10-08 20:52 UTC",
+      "Reference set": "Plinko Pocket Sensemaker reference 2026-10-08",
+      "Source URLs": "https://kumu.io/dan/a-network-of-thrones#geography\nhttps://docs.kumu.io/overview/kumus-architecture"
+    },
+    {
+      "id": "ppsref20261008-rea",
+      "label": "REA setup and readiness",
+      "type": "Workstream",
+      "description": "Package rea-agents 6.0.0 was checked against registry integrity and release signatures. Packaged no-change setup planning passed. Approved stable-target setup completed. Standalone MCP initialization, discovery of 139 advertised tools and a target-free test request passed. The current client has not refreshed its connected tools; restart/reconnect is needed before session usability can be verified. Certificate/transparency-chain and full dependency-provenance validation remain incomplete. Standalone discovery does not establish active-session tools or usable browser providers.\n\nReferences: [REA upstream project](https://github.com/morluto/rea) · [Versioned npm artifact](https://registry.npmjs.org/rea-agents/-/rea-agents-6.0.0.tgz)",
+      "tags": [
+        "Roadmap",
+        "Review"
+      ],
+      "Status": "Installed; standalone server verified",
+      "Evidence level": "Verified setup and server checks",
+      "Snapshot date": "2026-10-08",
+      "Status checked at": "2026-10-08 20:52 UTC",
+      "Reference set": "Plinko Pocket Sensemaker reference 2026-10-08",
+      "Source URLs": "https://github.com/morluto/rea\nhttps://registry.npmjs.org/rea-agents/-/rea-agents-6.0.0.tgz"
+    },
+    {
+      "id": "ppsref20261008-implementation",
+      "label": "Implementation underway",
+      "type": "Workstream",
+      "description": "Implementation was approved after review of the architecture audit and is underway separately. The storage/API foundation passed 13 automated tests: byte-identical v1 round trips, provenance and unknown-field retention, conflicting saves, transaction rollback and backup restore after reopening SQLite. Editor work continues. Full application/UI completion, merge, push, deployment and Kumu import are not confirmed by this reference. Preserve main/current viewer. A0–A7 show the audited dependency plan and acceptance targets; their individual gates must be evidenced before claiming completion.\n\nReferences: [Public repository](https://github.com/Jmx097/plinko-pocket-sensemaker)",
+      "tags": [
+        "Roadmap",
+        "Review"
+      ],
+      "Status": "In progress",
+      "Evidence level": "Project update",
+      "Snapshot date": "2026-10-08",
+      "Status checked at": "2026-10-08 20:52 UTC",
+      "Reference set": "Plinko Pocket Sensemaker reference 2026-10-08",
+      "Source URLs": "https://github.com/Jmx097/plinko-pocket-sensemaker"
+    },
+    {
+      "id": "ppsref20261008-a0",
+      "label": "A0 · Reproduce the baseline",
+      "type": "Milestone",
+      "description": "Complete isolated runtime testing at the pinned audit commit. Resolve the sandboxed-browser ownership blocker through an approved route.",
+      "tags": [
+        "Roadmap"
+      ],
+      "Status": "Blocked validation",
+      "Evidence level": "Acceptance completion unverified",
+      "Snapshot date": "2026-10-08",
+      "Status checked at": "2026-10-08 20:52 UTC",
+      "Reference set": "Plinko Pocket Sensemaker reference 2026-10-08",
+      "Acceptance": "Record actual startup/console and fixture hashes; classify source predictions as reproduced or not reproduced. Test fallback and filter behavior. Preserve main and deployment.",
+      "Depends on": "None",
+      "Relative size": "S"
+    },
+    {
+      "id": "ppsref20261008-a1",
+      "label": "A1 · Freeze compatibility and adapter",
+      "type": "Milestone",
+      "description": "Initial byte-identical v1 round-trip and provenance/unknown-field checks passed in the foundation suite. Continue freezing fixtures and completing separate adapter, standards-based validation and integrity acceptance.",
+      "tags": [
+        "Roadmap"
+      ],
+      "Status": "In progress",
+      "Evidence level": "Acceptance completion unverified",
+      "Snapshot date": "2026-10-08",
+      "Status checked at": "2026-10-08 20:52 UTC",
+      "Reference set": "Plinko Pocket Sensemaker reference 2026-10-08",
+      "Acceptance": "No-op v1 semantic round trip; byte-exact original restore; unknown-field retention; honest provenance; explicit export limitations; malformed and over-limit inputs rejected.",
+      "Depends on": "A0",
+      "Relative size": "M"
+    },
+    {
+      "id": "ppsref20261008-a2",
+      "label": "A2 · Unify state and visibility",
+      "type": "Milestone",
+      "description": "Separate state, commands and derived visible graph. Isolate legacy renderers and explicitly scoped startup/event repairs.",
+      "tags": [
+        "Roadmap"
+      ],
+      "Status": "Planned",
+      "Evidence level": "Acceptance completion unverified",
+      "Snapshot date": "2026-10-08",
+      "Status checked at": "2026-10-08 20:52 UTC",
+      "Reference set": "Plinko Pocket Sensemaker reference 2026-10-08",
+      "Acceptance": "Canvas, list and optional 3D agree on visible IDs, counts and relationship meaning for status/source/overlay/tour/neighborhood filters. Regression evidence before proposing a legacy change.",
+      "Depends on": "A1",
+      "Relative size": "M"
+    },
+    {
+      "id": "ppsref20261008-a3",
+      "label": "A3 · Persist, import and recover",
+      "type": "Milestone",
+      "description": "Storage/API foundation implemented; 13 automated checks passed, including conflicts, rollback and SQLite reopen/restore. Continue UI and full atomic import/recovery acceptance. This milestone is not complete.",
+      "tags": [
+        "Roadmap"
+      ],
+      "Status": "In progress",
+      "Evidence level": "Acceptance completion unverified",
+      "Snapshot date": "2026-10-08",
+      "Status checked at": "2026-10-08 20:52 UTC",
+      "Reference set": "Plinko Pocket Sensemaker reference 2026-10-08",
+      "Acceptance": "Saved project survives restart/crash; stale revision cannot overwrite; clean restore yields equivalent records and source references; rejected or interrupted import leaves committed state unchanged.",
+      "Depends on": "A1; agreed local architecture",
+      "Relative size": "L"
+    },
+    {
+      "id": "ppsref20261008-a4",
+      "label": "A4 · Edit graphs with evidence",
+      "type": "Milestone",
+      "description": "Editor implementation underway, not yet verified complete. Add node/edge commands and an evidence inspector using shared visibility and durable revisions.",
+      "tags": [
+        "Roadmap"
+      ],
+      "Status": "In progress",
+      "Evidence level": "Acceptance completion unverified",
+      "Snapshot date": "2026-10-08",
+      "Status checked at": "2026-10-08 20:52 UTC",
+      "Reference set": "Plinko Pocket Sensemaker reference 2026-10-08",
+      "Acceptance": "Stable IDs, duplicate labels, parallel edges, self-loops, endpoint edits, status handling and undo/recovery pass. Human acceptance never upgrades a proposal to a source fact.",
+      "Depends on": "A2; A3",
+      "Relative size": "M"
+    },
+    {
+      "id": "ppsref20261008-a5",
+      "label": "A5 · Save maps, layouts and pins",
+      "type": "Milestone",
+      "description": "Add multiple maps with independent layout drafts, explicit saves and persistent pins.",
+      "tags": [
+        "Roadmap"
+      ],
+      "Status": "Planned",
+      "Evidence level": "Acceptance completion unverified",
+      "Snapshot date": "2026-10-08",
+      "Status checked at": "2026-10-08 20:52 UTC",
+      "Reference set": "Plinko Pocket Sensemaker reference 2026-10-08",
+      "Acceptance": "Independent positions across maps; membership removal keeps graph entity; finite coordinates; save/revert and deterministic default layout; dragging changes no evidence or topology.",
+      "Depends on": "A3; A4",
+      "Relative size": "M"
+    },
+    {
+      "id": "ppsref20261008-a6",
+      "label": "A6 · Reuse views, filters and styles",
+      "type": "Milestone",
+      "description": "Add reusable project-level view presets, applicability, typed filters and safe style rules.",
+      "tags": [
+        "Roadmap"
+      ],
+      "Status": "Planned",
+      "Evidence level": "Acceptance completion unverified",
+      "Snapshot date": "2026-10-08",
+      "Status checked at": "2026-10-08 20:52 UTC",
+      "Reference set": "Plinko Pocket Sensemaker reference 2026-10-08",
+      "Acceptance": "Save/Revert/reload and independent duplication; map compatibility; explanatory empty states; deterministic rule order, missing values and legends; no executable imported rules.",
+      "Depends on": "A2; A5",
+      "Relative size": "L"
+    },
+    {
+      "id": "ppsref20261008-a7",
+      "label": "A7 · Package and verify release",
+      "type": "Milestone",
+      "description": "Package an offline local release and complete accessibility, security, export and recovery regression.",
+      "tags": [
+        "Roadmap"
+      ],
+      "Status": "Planned",
+      "Evidence level": "Acceptance completion unverified",
+      "Snapshot date": "2026-10-08",
+      "Status checked at": "2026-10-08 20:52 UTC",
+      "Reference set": "Plinko Pocket Sensemaker reference 2026-10-08",
+      "Acceptance": "No required external requests with egress denied; usable keyboard/list fallback; demonstrated clean backup restore; safe import/text boundaries; privacy-reviewed export and dependency notices.",
+      "Depends on": "A3; A4; A5; A6",
+      "Relative size": "M"
+    },
+    {
+      "id": "ppsref20261008-gatecompat",
+      "label": "Gate · Compatibility and integrity",
+      "type": "Acceptance gate",
+      "description": "No-op semantic equality; exact original-byte restore; nested unknown-field retention; duplicate/dangling IDs and invalid types rejected; cycles, multi-edges and self-loops covered.",
+      "tags": [
+        "Review"
+      ],
+      "Status": "Not yet passed",
+      "Evidence level": "Acceptance target",
+      "Snapshot date": "2026-10-08",
+      "Status checked at": "2026-10-08 20:52 UTC",
+      "Reference set": "Plinko Pocket Sensemaker reference 2026-10-08",
+      "Acceptance": "No-op semantic equality; exact original-byte restore; nested unknown-field retention; duplicate/dangling IDs and invalid types rejected; cycles, multi-edges and self-loops covered."
+    },
+    {
+      "id": "ppsref20261008-gateruntime",
+      "label": "Gate · Runtime and renderer parity",
+      "type": "Acceptance gate",
+      "description": "Pinned browser startup and console evidence; same visible IDs/counts across supported renderers; 3D loss/fallback; filter and empty-state regressions; no source prediction counted as runtime proof.",
+      "tags": [
+        "Review"
+      ],
+      "Status": "Not yet passed",
+      "Evidence level": "Acceptance target",
+      "Snapshot date": "2026-10-08",
+      "Status checked at": "2026-10-08 20:52 UTC",
+      "Reference set": "Plinko Pocket Sensemaker reference 2026-10-08",
+      "Acceptance": "Pinned browser startup and console evidence; same visible IDs/counts across supported renderers; 3D loss/fallback; filter and empty-state regressions; no source prediction counted as runtime proof."
+    },
+    {
+      "id": "ppsref20261008-gaterecovery",
+      "label": "Gate · Atomicity and recovery",
+      "type": "Acceptance gate",
+      "description": "Crash/restart recovery; rollback under interrupted save or preflight failure; explicit revision conflicts; equivalent records and source references after clean backup restore.",
+      "tags": [
+        "Review"
+      ],
+      "Status": "Not yet passed",
+      "Evidence level": "Acceptance target",
+      "Snapshot date": "2026-10-08",
+      "Status checked at": "2026-10-08 20:52 UTC",
+      "Reference set": "Plinko Pocket Sensemaker reference 2026-10-08",
+      "Acceptance": "Crash/restart recovery; rollback under interrupted save or preflight failure; explicit revision conflicts; equivalent records and source references after clean backup restore."
+    },
+    {
+      "id": "ppsref20261008-gateevidence",
+      "label": "Gate · Editing and provenance",
+      "type": "Acceptance gate",
+      "description": "Stable identity through edits; evidence/unknowns/hash scope preserved; exactness mismatch visible; no verified badge without authorized source bytes; acceptance does not change epistemic status.",
+      "tags": [
+        "Review"
+      ],
+      "Status": "Not yet passed",
+      "Evidence level": "Acceptance target",
+      "Snapshot date": "2026-10-08",
+      "Status checked at": "2026-10-08 20:52 UTC",
+      "Reference set": "Plinko Pocket Sensemaker reference 2026-10-08",
+      "Acceptance": "Stable identity through edits; evidence/unknowns/hash scope preserved; exactness mismatch visible; no verified badge without authorized source bytes; acceptance does not change epistemic status."
+    },
+    {
+      "id": "ppsref20261008-gatemaps",
+      "label": "Gate · Map and view independence",
+      "type": "Acceptance gate",
+      "description": "Independent map coordinates; membership-safe removal; drafts separate from saved revisions; save/revert/duplicate/switch/reload tested; styles cannot mutate graph meaning.",
+      "tags": [
+        "Review"
+      ],
+      "Status": "Not yet passed",
+      "Evidence level": "Acceptance target",
+      "Snapshot date": "2026-10-08",
+      "Status checked at": "2026-10-08 20:52 UTC",
+      "Reference set": "Plinko Pocket Sensemaker reference 2026-10-08",
+      "Acceptance": "Independent map coordinates; membership-safe removal; drafts separate from saved revisions; save/revert/duplicate/switch/reload tested; styles cannot mutate graph meaning."
+    },
+    {
+      "id": "ppsref20261008-gaterelease",
+      "label": "Gate · Private, usable release",
+      "type": "Acceptance gate",
+      "description": "Denied-egress test and network inspection; all required assets local; keyboard/list and assistive-technology paths; bounded untrusted input; origin/path controls; notices and reviewed exports; measured performance targets.",
+      "tags": [
+        "Review"
+      ],
+      "Status": "Not yet passed",
+      "Evidence level": "Acceptance target",
+      "Snapshot date": "2026-10-08",
+      "Status checked at": "2026-10-08 20:52 UTC",
+      "Reference set": "Plinko Pocket Sensemaker reference 2026-10-08",
+      "Acceptance": "Denied-egress test and network inspection; all required assets local; keyboard/list and assistive-technology paths; bounded untrusted input; origin/path controls; notices and reviewed exports; measured performance targets."
+    },
+    {
+      "id": "ppsref20261008-preserve",
+      "label": "Preserve main and current viewer",
+      "type": "Decision",
+      "description": "Keep the current viewer and main intact while work proceeds separately. New schema work must use a versioned adapter and separate application boundary. A successful test or approved implementation does not by itself authorize replacing the current viewer or deploying.\n\nReferences: [Current viewer](https://github.com/Jmx097/plinko-pocket-sensemaker/blob/19a3d38649fd53cebe1bb8296ebae8df8a2079f0/index.html)",
+      "tags": [
+        "Review"
+      ],
+      "Status": "Active constraint",
+      "Evidence level": "Owner constraint",
+      "Snapshot date": "2026-10-08",
+      "Status checked at": "2026-10-08 20:52 UTC",
+      "Reference set": "Plinko Pocket Sensemaker reference 2026-10-08",
+      "Source URLs": "https://github.com/Jmx097/plinko-pocket-sensemaker/blob/19a3d38649fd53cebe1bb8296ebae8df8a2079f0/index.html"
+    },
+    {
+      "id": "ppsref20261008-localtarget",
+      "label": "Local single-user deployment first",
+      "type": "Decision",
+      "description": "Prefer a loopback-only service, SQLite and local source artifacts for the first durable release. Confirm the operating environment and recovery responsibility during implementation. Broader team access is later scope with its own authentication and authorization requirements.",
+      "tags": [
+        "Review"
+      ],
+      "Status": "Design target",
+      "Evidence level": "Design proposal",
+      "Snapshot date": "2026-10-08",
+      "Status checked at": "2026-10-08 20:52 UTC",
+      "Reference set": "Plinko Pocket Sensemaker reference 2026-10-08"
+    },
+    {
+      "id": "ppsref20261008-renderchoice",
+      "label": "2D first; 3D optional",
+      "type": "Decision",
+      "description": "Use 2D and an accessible list as the primary editing/inspection foundation. Keep 3D as optional reading/navigation until parity and fallback tests pass. Cytoscape.js is proposed; selection should account for interaction goals, packaging, performance and license review.\n\nReferences: [Cytoscape.js](https://js.cytoscape.org/) · [Existing spatial experience](https://github.com/Jmx097/plinko-pocket-sensemaker/blob/19a3d38649fd53cebe1bb8296ebae8df8a2079f0/spatial.js)",
+      "tags": [
+        "Review"
+      ],
+      "Status": "Design target",
+      "Evidence level": "Design proposal",
+      "Snapshot date": "2026-10-08",
+      "Status checked at": "2026-10-08 20:52 UTC",
+      "Reference set": "Plinko Pocket Sensemaker reference 2026-10-08",
+      "Source URLs": "https://js.cytoscape.org/\nhttps://github.com/Jmx097/plinko-pocket-sensemaker/blob/19a3d38649fd53cebe1bb8296ebae8df8a2079f0/spatial.js"
+    },
+    {
+      "id": "ppsref20261008-rights",
+      "label": "Decide source retention and sharing",
+      "type": "Decision",
+      "description": "Define which source artifacts may be retained, representation/hash scope, deletion/retention and approved export audience. The public reference map contains only approved project details, not private source text. View filters are not a privacy boundary; review/redact exports before sharing.",
+      "tags": [
+        "Review"
+      ],
+      "Status": "Decision required",
+      "Evidence level": "Owner decision",
+      "Snapshot date": "2026-10-08",
+      "Status checked at": "2026-10-08 20:52 UTC",
+      "Reference set": "Plinko Pocket Sensemaker reference 2026-10-08"
+    },
+    {
+      "id": "ppsref20261008-license",
+      "label": "Select app license and notices",
+      "type": "Decision",
+      "description": "The audited application tree had no LICENSE file. Choose a license for owned code before redistribution and review dependency notices/SBOM. App licensing does not establish rights to source datasets or transcripts. Verify the state again before release.\n\nReferences: [Audited repository tree](https://github.com/Jmx097/plinko-pocket-sensemaker/tree/19a3d38649fd53cebe1bb8296ebae8df8a2079f0)",
+      "tags": [
+        "Review"
+      ],
+      "Status": "Decision required",
+      "Evidence level": "Verified gap at audit baseline",
+      "Snapshot date": "2026-10-08",
+      "Status checked at": "2026-10-08 20:52 UTC",
+      "Reference set": "Plinko Pocket Sensemaker reference 2026-10-08",
+      "Source URLs": "https://github.com/Jmx097/plinko-pocket-sensemaker/tree/19a3d38649fd53cebe1bb8296ebae8df8a2079f0"
+    },
+    {
+      "id": "ppsref20261008-browserblock",
+      "label": "Browser runtime validation blocked",
+      "type": "Blocker",
+      "description": "The isolated browser stopped before page load because Chromium sandbox-helper ownership was invalid. A supported alternative Firefox download was denied by network policy; no bypass was attempted. Security/sandbox settings were not weakened. Actual Sensemaker startup, import/export and 3D interaction still need a supported test route. This blocks evidence for A0 runtime acceptance, not source analysis or all implementation work.",
+      "tags": [
+        "Review"
+      ],
+      "Status": "Blocked validation",
+      "Evidence level": "Observed test blocker",
+      "Snapshot date": "2026-10-08",
+      "Status checked at": "2026-10-08 20:52 UTC",
+      "Reference set": "Plinko Pocket Sensemaker reference 2026-10-08"
+    },
+    {
+      "id": "ppsref20261008-sourceblock",
+      "label": "Original evidence bytes unavailable",
+      "type": "Blocker",
+      "description": "Original transcript bytes and deterministic segments were unavailable in the audit; all 65 baseline evidence segment IDs are null. The recorded digest identifies a rendered-text representation, not original-upload bytes. Quote exactness and semantic support cannot be independently upgraded to verified from these records alone.\n\nReferences: [Baseline evidence data](https://github.com/Jmx097/plinko-pocket-sensemaker/blob/19a3d38649fd53cebe1bb8296ebae8df8a2079f0/graph.json) · [Required evidence workflow](https://github.com/Jmx097/plinko-pocket-sensemaker/blob/19a3d38649fd53cebe1bb8296ebae8df8a2079f0/ingestion.md)",
+      "tags": [
+        "Review"
+      ],
+      "Status": "Blocked validation",
+      "Evidence level": "Verified evidence limitation",
+      "Snapshot date": "2026-10-08",
+      "Status checked at": "2026-10-08 20:52 UTC",
+      "Reference set": "Plinko Pocket Sensemaker reference 2026-10-08",
+      "Source URLs": "https://github.com/Jmx097/plinko-pocket-sensemaker/blob/19a3d38649fd53cebe1bb8296ebae8df8a2079f0/graph.json\nhttps://github.com/Jmx097/plinko-pocket-sensemaker/blob/19a3d38649fd53cebe1bb8296ebae8df8a2079f0/ingestion.md"
+    },
+    {
+      "id": "ppsref20261008-authoringblock",
+      "label": "Kumu authoring/import tests pending",
+      "type": "Blocker",
+      "description": "The public project exists, but this reference import has not been performed. Authoring, persisted view/layout changes and real import behavior remain untested. Online authoring verification could not be completed in this run. Do not infer a successful map edit, saved view or import from file validation.\n\nReferences: [Target public project](https://kumu.io/Jmx097/plinko-pocket) · [Official import format](https://docs.kumu.io/guides/import/blueprints)",
+      "tags": [
+        "Review"
+      ],
+      "Status": "Blocked validation",
+      "Evidence level": "Untested authoring",
+      "Snapshot date": "2026-10-08",
+      "Status checked at": "2026-10-08 20:52 UTC",
+      "Reference set": "Plinko Pocket Sensemaker reference 2026-10-08",
+      "Source URLs": "https://kumu.io/Jmx097/plinko-pocket\nhttps://docs.kumu.io/guides/import/blueprints"
+    }
+  ],
+  "connections": [
+    {
+      "id": "ppsref20261008-link-guide-goal",
+      "from": "ppsref20261008-guide",
+      "to": "ppsref20261008-goal",
+      "type": "introduces",
+      "label": "introduces",
+      "direction": "directed",
+      "tags": [
+        "Overview",
+        "Roadmap",
+        "Review"
+      ],
+      "description": "introduces. Direction reads from source element to target element.",
+      "Reference set": "Plinko Pocket Sensemaker reference 2026-10-08"
+    },
+    {
+      "id": "ppsref20261008-link-goal-graph",
+      "from": "ppsref20261008-goal",
+      "to": "ppsref20261008-graph",
+      "type": "centers on",
+      "label": "centers on",
+      "direction": "directed",
+      "tags": [
+        "Overview"
+      ],
+      "description": "centers on. Direction reads from source element to target element.",
+      "Reference set": "Plinko Pocket Sensemaker reference 2026-10-08"
+    },
+    {
+      "id": "ppsref20261008-link-baseline-adapter",
+      "from": "ppsref20261008-baseline",
+      "to": "ppsref20261008-adapter",
+      "type": "compatibility input",
+      "label": "compatibility input",
+      "direction": "directed",
+      "tags": [
+        "Overview"
+      ],
+      "description": "compatibility input. Direction reads from source element to target element.",
+      "Reference set": "Plinko Pocket Sensemaker reference 2026-10-08"
+    },
+    {
+      "id": "ppsref20261008-link-adapter-graph",
+      "from": "ppsref20261008-adapter",
+      "to": "ppsref20261008-graph",
+      "type": "normalizes without loss",
+      "label": "normalizes without loss",
+      "direction": "directed",
+      "tags": [
+        "Overview"
+      ],
+      "description": "normalizes without loss. Direction reads from source element to target element.",
+      "Reference set": "Plinko Pocket Sensemaker reference 2026-10-08"
+    },
+    {
+      "id": "ppsref20261008-link-ingestion-validation",
+      "from": "ppsref20261008-ingestion",
+      "to": "ppsref20261008-validation",
+      "type": "submits staged input",
+      "label": "submits staged input",
+      "direction": "directed",
+      "tags": [
+        "Overview"
+      ],
+      "description": "submits staged input. Direction reads from source element to target element.",
+      "Reference set": "Plinko Pocket Sensemaker reference 2026-10-08"
+    },
+    {
+      "id": "ppsref20261008-link-validation-graph",
+      "from": "ppsref20261008-validation",
+      "to": "ppsref20261008-graph",
+      "type": "checks before commit",
+      "label": "checks before commit",
+      "direction": "directed",
+      "tags": [
+        "Overview"
+      ],
+      "description": "checks before commit. Direction reads from source element to target element.",
+      "Reference set": "Plinko Pocket Sensemaker reference 2026-10-08"
+    },
+    {
+      "id": "ppsref20261008-link-graph-storage",
+      "from": "ppsref20261008-graph",
+      "to": "ppsref20261008-storage",
+      "type": "persists through",
+      "label": "persists through",
+      "direction": "directed",
+      "tags": [
+        "Overview"
+      ],
+      "description": "persists through. Direction reads from source element to target element.",
+      "Reference set": "Plinko Pocket Sensemaker reference 2026-10-08"
+    },
+    {
+      "id": "ppsref20261008-link-storage-backup",
+      "from": "ppsref20261008-storage",
+      "to": "ppsref20261008-backup",
+      "type": "supports recovery with",
+      "label": "supports recovery with",
+      "direction": "directed",
+      "tags": [
+        "Overview"
+      ],
+      "description": "supports recovery with. Direction reads from source element to target element.",
+      "Reference set": "Plinko Pocket Sensemaker reference 2026-10-08"
+    },
+    {
+      "id": "ppsref20261008-link-graph-query",
+      "from": "ppsref20261008-graph",
+      "to": "ppsref20261008-query",
+      "type": "feeds",
+      "label": "feeds",
+      "direction": "directed",
+      "tags": [
+        "Overview"
+      ],
+      "description": "feeds. Direction reads from source element to target element.",
+      "Reference set": "Plinko Pocket Sensemaker reference 2026-10-08"
+    },
+    {
+      "id": "ppsref20261008-link-editor-graph",
+      "from": "ppsref20261008-editor",
+      "to": "ppsref20261008-graph",
+      "type": "changes through commands",
+      "label": "changes through commands",
+      "direction": "directed",
+      "tags": [
+        "Overview"
+      ],
+      "description": "changes through commands. Direction reads from source element to target element.",
+      "Reference set": "Plinko Pocket Sensemaker reference 2026-10-08"
+    },
+    {
+      "id": "ppsref20261008-link-editor-inspector",
+      "from": "ppsref20261008-editor",
+      "to": "ppsref20261008-inspector",
+      "type": "inspects supporting evidence",
+      "label": "inspects supporting evidence",
+      "direction": "directed",
+      "tags": [
+        "Overview"
+      ],
+      "description": "inspects supporting evidence. Direction reads from source element to target element.",
+      "Reference set": "Plinko Pocket Sensemaker reference 2026-10-08"
+    },
+    {
+      "id": "ppsref20261008-link-query-renderer2d",
+      "from": "ppsref20261008-query",
+      "to": "ppsref20261008-renderer2d",
+      "type": "supplies visible graph",
+      "label": "supplies visible graph",
+      "direction": "directed",
+      "tags": [
+        "Overview"
+      ],
+      "description": "supplies visible graph. Direction reads from source element to target element.",
+      "Reference set": "Plinko Pocket Sensemaker reference 2026-10-08"
+    },
+    {
+      "id": "ppsref20261008-link-query-renderer3d",
+      "from": "ppsref20261008-query",
+      "to": "ppsref20261008-renderer3d",
+      "type": "supplies optional visible graph",
+      "label": "supplies optional visible graph",
+      "direction": "directed",
+      "tags": [
+        "Overview"
+      ],
+      "description": "supplies optional visible graph. Direction reads from source element to target element.",
+      "Reference set": "Plinko Pocket Sensemaker reference 2026-10-08"
+    },
+    {
+      "id": "ppsref20261008-link-graph-maps",
+      "from": "ppsref20261008-graph",
+      "to": "ppsref20261008-maps",
+      "type": "reuses entities in",
+      "label": "reuses entities in",
+      "direction": "directed",
+      "tags": [
+        "Overview"
+      ],
+      "description": "reuses entities in. Direction reads from source element to target element.",
+      "Reference set": "Plinko Pocket Sensemaker reference 2026-10-08"
+    },
+    {
+      "id": "ppsref20261008-link-maps-views",
+      "from": "ppsref20261008-maps",
+      "to": "ppsref20261008-views",
+      "type": "supports compatible presets",
+      "label": "supports compatible presets",
+      "direction": "directed",
+      "tags": [
+        "Overview"
+      ],
+      "description": "supports compatible presets. Direction reads from source element to target element.",
+      "Reference set": "Plinko Pocket Sensemaker reference 2026-10-08"
+    },
+    {
+      "id": "ppsref20261008-link-views-query",
+      "from": "ppsref20261008-views",
+      "to": "ppsref20261008-query",
+      "type": "configures visibility",
+      "label": "configures visibility",
+      "direction": "directed",
+      "tags": [
+        "Overview"
+      ],
+      "description": "configures visibility. Direction reads from source element to target element.",
+      "Reference set": "Plinko Pocket Sensemaker reference 2026-10-08"
+    },
+    {
+      "id": "ppsref20261008-link-backup-packaging",
+      "from": "ppsref20261008-backup",
+      "to": "ppsref20261008-packaging",
+      "type": "required for release",
+      "label": "required for release",
+      "direction": "directed",
+      "tags": [
+        "Overview"
+      ],
+      "description": "required for release. Direction reads from source element to target element.",
+      "Reference set": "Plinko Pocket Sensemaker reference 2026-10-08"
+    },
+    {
+      "id": "ppsref20261008-link-renderer2d-packaging",
+      "from": "ppsref20261008-renderer2d",
+      "to": "ppsref20261008-packaging",
+      "type": "primary interface in",
+      "label": "primary interface in",
+      "direction": "directed",
+      "tags": [
+        "Overview"
+      ],
+      "description": "primary interface in. Direction reads from source element to target element.",
+      "Reference set": "Plinko Pocket Sensemaker reference 2026-10-08"
+    },
+    {
+      "id": "ppsref20261008-link-kumu-views",
+      "from": "ppsref20261008-kumu",
+      "to": "ppsref20261008-views",
+      "type": "informs interaction requirements",
+      "label": "informs interaction requirements",
+      "direction": "directed",
+      "tags": [
+        "Overview"
+      ],
+      "description": "informs interaction requirements. Direction reads from source element to target element.",
+      "Reference set": "Plinko Pocket Sensemaker reference 2026-10-08"
+    },
+    {
+      "id": "ppsref20261008-link-goal-implementation",
+      "from": "ppsref20261008-goal",
+      "to": "ppsref20261008-implementation",
+      "type": "pursued through",
+      "label": "pursued through",
+      "direction": "directed",
+      "tags": [
+        "Roadmap"
+      ],
+      "description": "pursued through. Direction reads from source element to target element.",
+      "Reference set": "Plinko Pocket Sensemaker reference 2026-10-08"
+    },
+    {
+      "id": "ppsref20261008-link-implementation-a0",
+      "from": "ppsref20261008-implementation",
+      "to": "ppsref20261008-a0",
+      "type": "tracks baseline gate",
+      "label": "tracks baseline gate",
+      "direction": "directed",
+      "tags": [
+        "Roadmap"
+      ],
+      "description": "tracks baseline gate. Direction reads from source element to target element.",
+      "Reference set": "Plinko Pocket Sensemaker reference 2026-10-08"
+    },
+    {
+      "id": "ppsref20261008-link-implementation-rea",
+      "from": "ppsref20261008-implementation",
+      "to": "ppsref20261008-rea",
+      "type": "coordinates approved setup",
+      "label": "coordinates approved setup",
+      "direction": "directed",
+      "tags": [
+        "Roadmap"
+      ],
+      "description": "coordinates approved setup. Direction reads from source element to target element.",
+      "Reference set": "Plinko Pocket Sensemaker reference 2026-10-08"
+    },
+    {
+      "id": "ppsref20261008-link-a0-a1",
+      "from": "ppsref20261008-a0",
+      "to": "ppsref20261008-a1",
+      "type": "prerequisite for",
+      "label": "prerequisite for",
+      "direction": "directed",
+      "tags": [
+        "Roadmap"
+      ],
+      "description": "Planned dependency, not evidence of completion. The source milestone must satisfy its acceptance criteria before the dependent milestone is released.",
+      "Reference set": "Plinko Pocket Sensemaker reference 2026-10-08"
+    },
+    {
+      "id": "ppsref20261008-link-a1-a2",
+      "from": "ppsref20261008-a1",
+      "to": "ppsref20261008-a2",
+      "type": "prerequisite for",
+      "label": "prerequisite for",
+      "direction": "directed",
+      "tags": [
+        "Roadmap"
+      ],
+      "description": "Planned dependency, not evidence of completion. The source milestone must satisfy its acceptance criteria before the dependent milestone is released.",
+      "Reference set": "Plinko Pocket Sensemaker reference 2026-10-08"
+    },
+    {
+      "id": "ppsref20261008-link-a1-a3",
+      "from": "ppsref20261008-a1",
+      "to": "ppsref20261008-a3",
+      "type": "prerequisite for",
+      "label": "prerequisite for",
+      "direction": "directed",
+      "tags": [
+        "Roadmap"
+      ],
+      "description": "Planned dependency, not evidence of completion. The source milestone must satisfy its acceptance criteria before the dependent milestone is released.",
+      "Reference set": "Plinko Pocket Sensemaker reference 2026-10-08"
+    },
+    {
+      "id": "ppsref20261008-link-a2-a4",
+      "from": "ppsref20261008-a2",
+      "to": "ppsref20261008-a4",
+      "type": "prerequisite for",
+      "label": "prerequisite for",
+      "direction": "directed",
+      "tags": [
+        "Roadmap"
+      ],
+      "description": "Planned dependency, not evidence of completion. The source milestone must satisfy its acceptance criteria before the dependent milestone is released.",
+      "Reference set": "Plinko Pocket Sensemaker reference 2026-10-08"
+    },
+    {
+      "id": "ppsref20261008-link-a3-a4",
+      "from": "ppsref20261008-a3",
+      "to": "ppsref20261008-a4",
+      "type": "prerequisite for",
+      "label": "prerequisite for",
+      "direction": "directed",
+      "tags": [
+        "Roadmap"
+      ],
+      "description": "Planned dependency, not evidence of completion. The source milestone must satisfy its acceptance criteria before the dependent milestone is released.",
+      "Reference set": "Plinko Pocket Sensemaker reference 2026-10-08"
+    },
+    {
+      "id": "ppsref20261008-link-a3-a5",
+      "from": "ppsref20261008-a3",
+      "to": "ppsref20261008-a5",
+      "type": "prerequisite for",
+      "label": "prerequisite for",
+      "direction": "directed",
+      "tags": [
+        "Roadmap"
+      ],
+      "description": "Planned dependency, not evidence of completion. The source milestone must satisfy its acceptance criteria before the dependent milestone is released.",
+      "Reference set": "Plinko Pocket Sensemaker reference 2026-10-08"
+    },
+    {
+      "id": "ppsref20261008-link-a4-a5",
+      "from": "ppsref20261008-a4",
+      "to": "ppsref20261008-a5",
+      "type": "prerequisite for",
+      "label": "prerequisite for",
+      "direction": "directed",
+      "tags": [
+        "Roadmap"
+      ],
+      "description": "Planned dependency, not evidence of completion. The source milestone must satisfy its acceptance criteria before the dependent milestone is released.",
+      "Reference set": "Plinko Pocket Sensemaker reference 2026-10-08"
+    },
+    {
+      "id": "ppsref20261008-link-a2-a6",
+      "from": "ppsref20261008-a2",
+      "to": "ppsref20261008-a6",
+      "type": "prerequisite for",
+      "label": "prerequisite for",
+      "direction": "directed",
+      "tags": [
+        "Roadmap"
+      ],
+      "description": "Planned dependency, not evidence of completion. The source milestone must satisfy its acceptance criteria before the dependent milestone is released.",
+      "Reference set": "Plinko Pocket Sensemaker reference 2026-10-08"
+    },
+    {
+      "id": "ppsref20261008-link-a5-a6",
+      "from": "ppsref20261008-a5",
+      "to": "ppsref20261008-a6",
+      "type": "prerequisite for",
+      "label": "prerequisite for",
+      "direction": "directed",
+      "tags": [
+        "Roadmap"
+      ],
+      "description": "Planned dependency, not evidence of completion. The source milestone must satisfy its acceptance criteria before the dependent milestone is released.",
+      "Reference set": "Plinko Pocket Sensemaker reference 2026-10-08"
+    },
+    {
+      "id": "ppsref20261008-link-a3-a7",
+      "from": "ppsref20261008-a3",
+      "to": "ppsref20261008-a7",
+      "type": "prerequisite for",
+      "label": "prerequisite for",
+      "direction": "directed",
+      "tags": [
+        "Roadmap"
+      ],
+      "description": "Planned dependency, not evidence of completion. The source milestone must satisfy its acceptance criteria before the dependent milestone is released.",
+      "Reference set": "Plinko Pocket Sensemaker reference 2026-10-08"
+    },
+    {
+      "id": "ppsref20261008-link-a4-a7",
+      "from": "ppsref20261008-a4",
+      "to": "ppsref20261008-a7",
+      "type": "prerequisite for",
+      "label": "prerequisite for",
+      "direction": "directed",
+      "tags": [
+        "Roadmap"
+      ],
+      "description": "Planned dependency, not evidence of completion. The source milestone must satisfy its acceptance criteria before the dependent milestone is released.",
+      "Reference set": "Plinko Pocket Sensemaker reference 2026-10-08"
+    },
+    {
+      "id": "ppsref20261008-link-a5-a7",
+      "from": "ppsref20261008-a5",
+      "to": "ppsref20261008-a7",
+      "type": "prerequisite for",
+      "label": "prerequisite for",
+      "direction": "directed",
+      "tags": [
+        "Roadmap"
+      ],
+      "description": "Planned dependency, not evidence of completion. The source milestone must satisfy its acceptance criteria before the dependent milestone is released.",
+      "Reference set": "Plinko Pocket Sensemaker reference 2026-10-08"
+    },
+    {
+      "id": "ppsref20261008-link-a6-a7",
+      "from": "ppsref20261008-a6",
+      "to": "ppsref20261008-a7",
+      "type": "prerequisite for",
+      "label": "prerequisite for",
+      "direction": "directed",
+      "tags": [
+        "Roadmap"
+      ],
+      "description": "Planned dependency, not evidence of completion. The source milestone must satisfy its acceptance criteria before the dependent milestone is released.",
+      "Reference set": "Plinko Pocket Sensemaker reference 2026-10-08"
+    },
+    {
+      "id": "ppsref20261008-link-goal-preserve",
+      "from": "ppsref20261008-goal",
+      "to": "ppsref20261008-preserve",
+      "type": "constrained by",
+      "label": "constrained by",
+      "direction": "directed",
+      "tags": [
+        "Review"
+      ],
+      "description": "constrained by. Direction reads from source element to target element.",
+      "Reference set": "Plinko Pocket Sensemaker reference 2026-10-08"
+    },
+    {
+      "id": "ppsref20261008-link-goal-localtarget",
+      "from": "ppsref20261008-goal",
+      "to": "ppsref20261008-localtarget",
+      "type": "targets",
+      "label": "targets",
+      "direction": "directed",
+      "tags": [
+        "Review"
+      ],
+      "description": "targets. Direction reads from source element to target element.",
+      "Reference set": "Plinko Pocket Sensemaker reference 2026-10-08"
+    },
+    {
+      "id": "ppsref20261008-link-goal-renderchoice",
+      "from": "ppsref20261008-goal",
+      "to": "ppsref20261008-renderchoice",
+      "type": "uses proposed approach",
+      "label": "uses proposed approach",
+      "direction": "directed",
+      "tags": [
+        "Review"
+      ],
+      "description": "uses proposed approach. Direction reads from source element to target element.",
+      "Reference set": "Plinko Pocket Sensemaker reference 2026-10-08"
+    },
+    {
+      "id": "ppsref20261008-link-localtarget-rights",
+      "from": "ppsref20261008-localtarget",
+      "to": "ppsref20261008-rights",
+      "type": "requires retention decision",
+      "label": "requires retention decision",
+      "direction": "directed",
+      "tags": [
+        "Review"
+      ],
+      "description": "requires retention decision. Direction reads from source element to target element.",
+      "Reference set": "Plinko Pocket Sensemaker reference 2026-10-08"
+    },
+    {
+      "id": "ppsref20261008-link-localtarget-gaterecovery",
+      "from": "ppsref20261008-localtarget",
+      "to": "ppsref20261008-gaterecovery",
+      "type": "requires",
+      "label": "requires",
+      "direction": "directed",
+      "tags": [
+        "Review"
+      ],
+      "description": "requires. Direction reads from source element to target element.",
+      "Reference set": "Plinko Pocket Sensemaker reference 2026-10-08"
+    },
+    {
+      "id": "ppsref20261008-link-renderchoice-gateruntime",
+      "from": "ppsref20261008-renderchoice",
+      "to": "ppsref20261008-gateruntime",
+      "type": "requires",
+      "label": "requires",
+      "direction": "directed",
+      "tags": [
+        "Review"
+      ],
+      "description": "requires. Direction reads from source element to target element.",
+      "Reference set": "Plinko Pocket Sensemaker reference 2026-10-08"
+    },
+    {
+      "id": "ppsref20261008-link-renderchoice-gatemaps",
+      "from": "ppsref20261008-renderchoice",
+      "to": "ppsref20261008-gatemaps",
+      "type": "requires",
+      "label": "requires",
+      "direction": "directed",
+      "tags": [
+        "Review"
+      ],
+      "description": "requires. Direction reads from source element to target element.",
+      "Reference set": "Plinko Pocket Sensemaker reference 2026-10-08"
+    },
+    {
+      "id": "ppsref20261008-link-preserve-gatecompat",
+      "from": "ppsref20261008-preserve",
+      "to": "ppsref20261008-gatecompat",
+      "type": "requires",
+      "label": "requires",
+      "direction": "directed",
+      "tags": [
+        "Review"
+      ],
+      "description": "requires. Direction reads from source element to target element.",
+      "Reference set": "Plinko Pocket Sensemaker reference 2026-10-08"
+    },
+    {
+      "id": "ppsref20261008-link-rights-gateevidence",
+      "from": "ppsref20261008-rights",
+      "to": "ppsref20261008-gateevidence",
+      "type": "governs",
+      "label": "governs",
+      "direction": "directed",
+      "tags": [
+        "Review"
+      ],
+      "description": "governs. Direction reads from source element to target element.",
+      "Reference set": "Plinko Pocket Sensemaker reference 2026-10-08"
+    },
+    {
+      "id": "ppsref20261008-link-gateevidence-sourceblock",
+      "from": "ppsref20261008-gateevidence",
+      "to": "ppsref20261008-sourceblock",
+      "type": "blocked by missing source",
+      "label": "blocked by missing source",
+      "direction": "directed",
+      "tags": [
+        "Review"
+      ],
+      "description": "blocked by missing source. Direction reads from source element to target element.",
+      "Reference set": "Plinko Pocket Sensemaker reference 2026-10-08"
+    },
+    {
+      "id": "ppsref20261008-link-gateruntime-browserblock",
+      "from": "ppsref20261008-gateruntime",
+      "to": "ppsref20261008-browserblock",
+      "type": "runtime proof blocked by",
+      "label": "runtime proof blocked by",
+      "direction": "directed",
+      "tags": [
+        "Review"
+      ],
+      "description": "runtime proof blocked by. Direction reads from source element to target element.",
+      "Reference set": "Plinko Pocket Sensemaker reference 2026-10-08"
+    },
+    {
+      "id": "ppsref20261008-link-gaterelease-license",
+      "from": "ppsref20261008-gaterelease",
+      "to": "ppsref20261008-license",
+      "type": "requires license decision",
+      "label": "requires license decision",
+      "direction": "directed",
+      "tags": [
+        "Review"
+      ],
+      "description": "requires license decision. Direction reads from source element to target element.",
+      "Reference set": "Plinko Pocket Sensemaker reference 2026-10-08"
+    },
+    {
+      "id": "ppsref20261008-link-localtarget-gaterelease",
+      "from": "ppsref20261008-localtarget",
+      "to": "ppsref20261008-gaterelease",
+      "type": "must pass before release",
+      "label": "must pass before release",
+      "direction": "directed",
+      "tags": [
+        "Review"
+      ],
+      "description": "must pass before release. Direction reads from source element to target element.",
+      "Reference set": "Plinko Pocket Sensemaker reference 2026-10-08"
+    },
+    {
+      "id": "ppsref20261008-link-kumu-authoringblock",
+      "from": "ppsref20261008-kumu",
+      "to": "ppsref20261008-authoringblock",
+      "type": "authoring remains untested",
+      "label": "authoring remains untested",
+      "direction": "directed",
+      "tags": [
+        "Review"
+      ],
+      "description": "authoring remains untested. Direction reads from source element to target element.",
+      "Reference set": "Plinko Pocket Sensemaker reference 2026-10-08"
+    },
+    {
+      "id": "ppsref20261008-link-baseline-gatecompat",
+      "from": "ppsref20261008-baseline",
+      "to": "ppsref20261008-gatecompat",
+      "type": "supplies fixture",
+      "label": "supplies fixture",
+      "direction": "directed",
+      "tags": [
+        "Review"
+      ],
+      "description": "supplies fixture. Direction reads from source element to target element.",
+      "Reference set": "Plinko Pocket Sensemaker reference 2026-10-08"
+    },
+    {
+      "id": "ppsref20261008-link-implementation-preserve",
+      "from": "ppsref20261008-implementation",
+      "to": "ppsref20261008-preserve",
+      "type": "must preserve",
+      "label": "must preserve",
+      "direction": "directed",
+      "tags": [
+        "Review"
+      ],
+      "description": "must preserve. Direction reads from source element to target element.",
+      "Reference set": "Plinko Pocket Sensemaker reference 2026-10-08"
+    },
+    {
+      "id": "ppsref20261008-link-rea-browserblock",
+      "from": "ppsref20261008-rea",
+      "to": "ppsref20261008-browserblock",
+      "type": "does not resolve by itself",
+      "label": "does not resolve by itself",
+      "direction": "directed",
+      "tags": [
+        "Review"
+      ],
+      "description": "does not resolve by itself. Direction reads from source element to target element.",
+      "Reference set": "Plinko Pocket Sensemaker reference 2026-10-08"
+    },
+    {
+      "id": "ppsref20261008-link-a0-gateruntime",
+      "from": "ppsref20261008-a0",
+      "to": "ppsref20261008-gateruntime",
+      "type": "must pass",
+      "label": "must pass",
+      "direction": "directed",
+      "tags": [
+        "Cross-reference"
+      ],
+      "description": "must pass. Direction reads from source element to target element.",
+      "Reference set": "Plinko Pocket Sensemaker reference 2026-10-08"
+    },
+    {
+      "id": "ppsref20261008-link-a1-gatecompat",
+      "from": "ppsref20261008-a1",
+      "to": "ppsref20261008-gatecompat",
+      "type": "must pass",
+      "label": "must pass",
+      "direction": "directed",
+      "tags": [
+        "Cross-reference"
+      ],
+      "description": "must pass. Direction reads from source element to target element.",
+      "Reference set": "Plinko Pocket Sensemaker reference 2026-10-08"
+    },
+    {
+      "id": "ppsref20261008-link-a2-gateruntime",
+      "from": "ppsref20261008-a2",
+      "to": "ppsref20261008-gateruntime",
+      "type": "must pass",
+      "label": "must pass",
+      "direction": "directed",
+      "tags": [
+        "Cross-reference"
+      ],
+      "description": "must pass. Direction reads from source element to target element.",
+      "Reference set": "Plinko Pocket Sensemaker reference 2026-10-08"
+    },
+    {
+      "id": "ppsref20261008-link-a3-gaterecovery",
+      "from": "ppsref20261008-a3",
+      "to": "ppsref20261008-gaterecovery",
+      "type": "must pass",
+      "label": "must pass",
+      "direction": "directed",
+      "tags": [
+        "Cross-reference"
+      ],
+      "description": "must pass. Direction reads from source element to target element.",
+      "Reference set": "Plinko Pocket Sensemaker reference 2026-10-08"
+    },
+    {
+      "id": "ppsref20261008-link-a4-gateevidence",
+      "from": "ppsref20261008-a4",
+      "to": "ppsref20261008-gateevidence",
+      "type": "must pass",
+      "label": "must pass",
+      "direction": "directed",
+      "tags": [
+        "Cross-reference"
+      ],
+      "description": "must pass. Direction reads from source element to target element.",
+      "Reference set": "Plinko Pocket Sensemaker reference 2026-10-08"
+    },
+    {
+      "id": "ppsref20261008-link-a5-gatemaps",
+      "from": "ppsref20261008-a5",
+      "to": "ppsref20261008-gatemaps",
+      "type": "must pass",
+      "label": "must pass",
+      "direction": "directed",
+      "tags": [
+        "Cross-reference"
+      ],
+      "description": "must pass. Direction reads from source element to target element.",
+      "Reference set": "Plinko Pocket Sensemaker reference 2026-10-08"
+    },
+    {
+      "id": "ppsref20261008-link-a6-gatemaps",
+      "from": "ppsref20261008-a6",
+      "to": "ppsref20261008-gatemaps",
+      "type": "must pass",
+      "label": "must pass",
+      "direction": "directed",
+      "tags": [
+        "Cross-reference"
+      ],
+      "description": "must pass. Direction reads from source element to target element.",
+      "Reference set": "Plinko Pocket Sensemaker reference 2026-10-08"
+    },
+    {
+      "id": "ppsref20261008-link-a7-gaterelease",
+      "from": "ppsref20261008-a7",
+      "to": "ppsref20261008-gaterelease",
+      "type": "must pass",
+      "label": "must pass",
+      "direction": "directed",
+      "tags": [
+        "Cross-reference"
+      ],
+      "description": "must pass. Direction reads from source element to target element.",
+      "Reference set": "Plinko Pocket Sensemaker reference 2026-10-08"
+    }
+  ]
+}
